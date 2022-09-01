@@ -1,7 +1,7 @@
 import React from "react";
 
 // Import the Home page component
-import Home from "./pages/home.jsx";
+import Home from "./pages/Home";
 
 // Import and apply CSS stylesheet
 import "./styles/styles.css";
