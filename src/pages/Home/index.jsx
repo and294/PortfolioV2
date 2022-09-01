@@ -10,6 +10,19 @@ background: url('https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/
 height: 100vh;
 width: 100vw;
 color: white;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+position: relative;
+`;
+
+const Name = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
 `;
 
 export default function Home() {
@@ -18,13 +31,14 @@ export default function Home() {
   return (
     <>
       <Landing>
-        
-      <Navbar />  
-      <h1 className="title">Andrea Ferraro</h1>
-      <h2>Frontend Developer</h2>
-      <p>
+       <Navbar />  
+        <Name>
+       <h1 className="title" style={{fontSize: '158px'}}>Andrea Ferraro</h1>
+      <h2 style={{fontSize: '36px'}}>Frontend Developer</h2>
+      <p style={{fontSize: '14px'}}>
         Paris, France
-      </p>
+      </p> 
+        </Name>
       </Landing>
       
     </>

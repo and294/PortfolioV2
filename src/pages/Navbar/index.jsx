@@ -8,6 +8,9 @@ const Nav = styled.nav`
 display: flex;
 justify-content: flex-end;
 padding: 40px;
+position: absolute;
+top: 0;
+right: 0;
 `;
 
 const NavLink = styled(Link)`
@@ -17,9 +20,9 @@ const NavLink = styled(Link)`
 export default function Navbar() {
   return (
     <Nav>
-      <a>About</a>
-      <a>Work</a>
-      <a>Contact</a>
+      <a style={{fontSize: '32px'}}>About</a>
+      <a style={{fontSize: '32px'}}>Work</a>
+      <a style={{fontSize: '32px'}}>Contact</a>
     </Nav>
   );
 }
