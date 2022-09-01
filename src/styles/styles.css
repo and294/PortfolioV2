@@ -24,3 +24,17 @@ video {
   height: auto;
   max-width: 100%;
 }
+
+@font-face {
+  font-family: "SaintMonica";
+  src: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/SaintMonicaRegular.otf?v=1662029025148"),
+    url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/SaintMonicaRegular.otf?v=1662029025148")
+      format("ttf");
+}
+
+@font-face {
+  font-family: "GT america";
+  src: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/GT%20America%20Extended%20Bold.ttf?v=1662029353336"),
+    url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/GT%20America%20Extended%20Bold.ttf?v=1662029353336")
+      format("ttf");
+}

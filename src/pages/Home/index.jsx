@@ -33,8 +33,8 @@ export default function Home() {
       <Landing>
        <Navbar />  
         <Name>
-       <h1 className="title" style={{fontSize: '158px'}}>Andrea Ferraro</h1>
-      <h2 style={{fontSize: '36px'}}>Frontend Developer</h2>
+       <h1 className="title" style={{fontSize: '126px', fontFamily: "SaintMonica"}}>ANDREA FERRARO</h1>
+      <h2 style={{fontSize: '34px', fontFamily: "GT america"}}>Frontend Developer</h2>
       <p style={{fontSize: '14px'}}>
         Paris, France
       </p> 
