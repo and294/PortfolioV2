@@ -50,6 +50,18 @@ bottom: 0;
 left: 0;
 `;
 
+const Scroll = styled.p`
+position: absolute;
+bottom: 0;
+right: 0;
+margin: 50px;
+padding: 10px;
+height: 80px;
+border-left: solid #4C6096;
+display: flex;
+align-items: center;
+`;
+
 
 export default function Home() {
  
@@ -67,7 +79,8 @@ export default function Home() {
       </p>
           <Circle></Circle>  
         </Name>
-       <Resume>Resume</Resume> 
+       <Resume>Resume</Resume>
+        <Scroll>Scroll</Scroll>
       </Landing>
       
     </>
