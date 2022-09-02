@@ -35,10 +35,11 @@ export default function Home() {
         <Name>
        <h1 className="title" style={{fontSize: '126px', fontFamily: "SaintMonica"}}>ANDREA FERRARO</h1>
       <h2 style={{fontSize: '34px', fontFamily: "GT america"}}>Frontend Developer</h2>
-          <span style={{width}}></span>
+          <span style={{width: "180px", height: "2px", backgroundColor: "rgb(76, 96, 150)", margin: "10px"}}></span>
       <p style={{fontSize: '14px'}}>
         Paris, France
-      </p> 
+      </p>
+          <span></span>
         </Name>
       </Landing>
       
