@@ -62,6 +62,27 @@ display: flex;
 align-items: center;
 `;
 
+const WelcomeStrip = styled.section`
+  background: #4C6096;
+  color: #EEE;
+  font-family: "SaintMonica";
+  font-size: 2em;
+  padding: 32px 0;
+
+  position: relative;
+  overflow: hidden;
+`;
+
+const WelcomeInner = styled.div`
+ -webkit-font-smoothing: antialiased;
+    width: fit-content;
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+`;
+
+const Welcome = styled.div``;
+
 
 export default function Home() {
  
@@ -82,17 +103,19 @@ export default function Home() {
        <Resume>Resume</Resume>
         <Scroll>Scroll</Scroll>
       </Landing>
-      <section>
-      <div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        <div>WELCOME</div>
-        </div>
-      </section>
+      <WelcomeStrip>
+      <WelcomeInner>
+        <div>WELCOME &#x2022;</div>
+        <div>WELCOME &#x2022;</div>
+        <div>&nbsp;WELCOME &#x2022;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        <div>WELCOME &#x2022;&nbsp;</div>
+        </WelcomeInner>
+      </WelcomeStrip>
       
     </>
   );
