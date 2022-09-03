@@ -82,6 +82,17 @@ export default function Home() {
        <Resume>Resume</Resume>
         <Scroll>Scroll</Scroll>
       </Landing>
+      <section>
+      <div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        <div>WELCOME</div>
+        </div>
+      </section>
       
     </>
   );
