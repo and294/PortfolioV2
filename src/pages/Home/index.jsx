@@ -97,28 +97,18 @@ export default function Home() {
   const welcomeInner = useRef();
 
   useEffect(() => {
-let currentScroll = 0;
-let isScrollingDown = true;
-
-let tween = gsap.to(welcomeText.current, {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
-
-gsap.set(welcomeInner.current, {xPercent: -50});
-
-window.addEventListener("scroll", function(){
-  
-  if ( window.pageYOffset > currentScroll ) {
-    isScrollingDown = true;
-  } else {
-    isScrollingDown = false;
-  }
-   
-  gsap.to(tween, {
-    timeScale: isScrollingDown ? 1 : -1
-  });
-  
-  currentScroll = window.pageYOffset
-});
-  });
+    gsap.to(welcomeInner.current, {
+      x: -100,
+      duration: 5,
+      scrollTrigger: {
+        trigger: "#thirdCircle",
+        markers: true,
+        start: "top center",
+        end: "bottom 80px",
+        scrub: true
+      }
+    });
+  }, []);
 
   return (
     <>
@@ -167,6 +157,7 @@ window.addEventListener("scroll", function(){
           <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
         </WelcomeInner>
       </WelcomeStrip>
+      <div style={{height: "100000px"}}></div>
     </>
   );
 }
