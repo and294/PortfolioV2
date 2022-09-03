@@ -103,7 +103,7 @@ export default function Home() {
       duration: 1,
       scrollTrigger: {
         trigger: welcomeInner.current,
-        markers: true,
+        markers: false,
         start: "top bottom",
         end: "bottom top",
         scrub: true
