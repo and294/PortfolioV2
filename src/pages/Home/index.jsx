@@ -81,7 +81,11 @@ const WelcomeInner = styled.div`
     flex-direction: row;
 `;
 
-const Welcome = styled.div``;
+const Welcome = styled.div`
+display: flex;
+flex: auto;
+    flex-direction: row;
+`;
 
 
 export default function Home() {
@@ -105,15 +109,15 @@ export default function Home() {
       </Landing>
       <WelcomeStrip>
       <WelcomeInner>
-        <div>WELCOME &#x2022;</div>
-        <div>WELCOME &#x2022;</div>
-        <div>&nbsp;WELCOME &#x2022;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
-        <div>WELCOME &#x2022;&nbsp;</div>
+        <Welcome>&#x2022;&nbsp;WELCOME</Welcome>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+        <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
         </WelcomeInner>
       </WelcomeStrip>
       
