@@ -100,14 +100,16 @@ export default function Home() {
     let currentScroll = 0;
     let isScrollingDown = true;
 
-    let tween = gsap.to(welcomeText.current, {
-  xPercent: -100, 
-  repeat: -1, 
-  duration: 10, 
-  ease: "linear"
-}).totalProgress(0.5);
+    let tween = gsap
+      .to(welcomeInner.current, {
+        xPercent: -100,
+        repeat: -1,
+        duration: 10,
+        ease: "linear",
+      })
+      .totalProgress(0.5);
 
-    gsap.set(welcomeInner.current, { xPercent: -50 });
+    gsap.set(welcomeText.current, { xPercent: -50 });
 
     window.addEventListener("scroll", function () {
       if (window.pageYOffset > currentScroll) {
@@ -117,10 +119,10 @@ export default function Home() {
       }
 
       gsap.to(tween, {
-        timeScale: isScrollingDown ? 1 : -1
+        timeScale: isScrollingDown ? 1 : -1,
       });
-      
-      currentScroll = window.pageYOffset
+
+      currentScroll = window.pageYOffset;
     });
   });
 
