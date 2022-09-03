@@ -71,7 +71,7 @@ const WelcomeStrip = styled.section`
   background: #4c6096;
   color: #eee;
   font-family: "SaintMonica";
-  font-size: 2em;
+  font-size: 2.5em;
   padding: 32px 0;
 
   position: relative;
@@ -90,6 +90,7 @@ const Welcome = styled.div`
   display: flex;
   flex: auto;
   flex-direction: row;
+  opacity: 0.5;
 `;
 
 export default function Home() {
@@ -98,13 +99,13 @@ export default function Home() {
 
   useEffect(() => {
     gsap.to(welcomeInner.current, {
-      x: -100,
-      duration: 5,
+      x: -500,
+      duration: 1,
       scrollTrigger: {
-        trigger: "#thirdCircle",
+        trigger: welcomeInner.current,
         markers: true,
-        start: "top center",
-        end: "bottom 80px",
+        start: "top bottom",
+        end: "bottom top",
         scrub: true
       }
     });
@@ -146,15 +147,15 @@ export default function Home() {
       </Landing>
       <WelcomeStrip>
         <WelcomeInner ref={welcomeInner}>
-          <div ref={welcomeText}>&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
         </WelcomeInner>
       </WelcomeStrip>
       <div style={{height: "100000px"}}></div>
