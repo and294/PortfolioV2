@@ -97,33 +97,27 @@ export default function Home() {
   const welcomeInner = useRef();
 
   useEffect(() => {
-    let currentScroll = 0;
-    let isScrollingDown = true;
+let currentScroll = 0;
+let isScrollingDown = true;
 
-    let tween = gsap
-      .to(welcomeInner.current, {
-        xPercent: -100,
-        repeat: -1,
-        duration: 10,
-        ease: "linear",
-      })
-      .totalProgress(0.5);
+let tween = gsap.to(welcomeText.current, {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
 
-    gsap.set(welcomeText.current, { xPercent: -50 });
+gsap.set(welcomeInner.current, {xPercent: -50});
 
-    window.addEventListener("scroll", function () {
-      if (window.pageYOffset > currentScroll) {
-        isScrollingDown = true;
-      } else {
-        isScrollingDown = false;
-      }
-
-      gsap.to(tween, {
-        timeScale: isScrollingDown ? 1 : -1,
-      });
-
-      currentScroll = window.pageYOffset;
-    });
+window.addEventListener("scroll", function(){
+  
+  if ( window.pageYOffset > currentScroll ) {
+    isScrollingDown = true;
+  } else {
+    isScrollingDown = false;
+  }
+   
+  gsap.to(tween, {
+    timeScale: isScrollingDown ? 1 : -1
+  });
+  
+  currentScroll = window.pageYOffset
+});
   });
 
   return (
@@ -163,14 +157,14 @@ export default function Home() {
       <WelcomeStrip>
         <WelcomeInner ref={welcomeInner}>
           <div ref={welcomeText}>&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText}>&nbsp;&#x2022;&nbsp;WELCOME</div>
         </WelcomeInner>
       </WelcomeStrip>
     </>
