@@ -1,9 +1,14 @@
 import React from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import Navbar from "/src/pages/Navbar";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Landing = styled.section`
 background: url('https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.png?v=1662027272290');
@@ -90,6 +95,30 @@ flex: auto;
 
 export default function Home() {
  
+  const welcomeText = useRef();
+  const welcomeInner = useRef();
+  
+  useEffect(() => {
+   let currentScroll = 0;
+let isScrollingDown = true;
+
+let tween = gsap.to(".marquee__part", {xPercent: -100, repeat: -1, duration: 10, ease: "linear"}).totalProgress(0.5);
+
+gsap.set(".marquee__inner", {xPercent: -50});
+
+window.addEventListener("scroll", function(){
+  
+  if ( window.pageYOffset > currentScroll ) {
+    isScrollingDown = true;
+  } else {
+    isScrollingDown = false;
+  }
+   
+  gsap.to(tween, {
+    timeScale: isScrollingDown ? 1 : -1
+  }); 
+  });
+  })
 
   return (
     <>
@@ -108,8 +137,8 @@ export default function Home() {
         <Scroll>Scroll</Scroll>
       </Landing>
       <WelcomeStrip>
-      <WelcomeInner>
-        <Welcome>&#x2022;&nbsp;WELCOME</Welcome>
+      <WelcomeInner ref={welcomeInner}>
+        <div ref={welcomeText}>&#x2022;&nbsp;WELCOME</div>
         <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
         <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
         <div>&nbsp;&#x2022;&nbsp;WELCOME</div>
