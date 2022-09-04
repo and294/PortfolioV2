@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 
 const AboutSection = styled.section`
-  background: #0d0d0d;
+  background: #181818;
   color: white;
   display: flex;
   justify-content: space-between;
