@@ -62,36 +62,12 @@ const Scroll = styled.p`
   margin: 50px;
   padding: 10px;
   height: 80px;
+  font-family: GT america;
   border-left: solid #4c6096;
   display: flex;
   align-items: center;
 `;
 
-const WelcomeStrip = styled.section`
-  background: #4c6096;
-  color: #eee;
-  font-family: "SaintMonica";
-  font-size: 2.5em;
-  padding: 32px 0;
-
-  position: relative;
-  overflow: hidden;
-`;
-
-const WelcomeInner = styled.div`
-  -webkit-font-smoothing: antialiased;
-  width: fit-content;
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-`;
-
-const Welcome = styled.div`
-  display: flex;
-  flex: auto;
-  flex-direction: row;
-  opacity: 0.5;
-`;
 
 export default function Home() {
 
@@ -123,7 +99,7 @@ export default function Home() {
               margin: "10px",
             }}
           ></span>
-          <p style={{ fontSize: "14px", zIndex: "10" }}>Paris, France</p>
+          <p style={{ fontSize: "14px", zIndex: "10", fontFamily: "GT america" }}>Paris, France</p>
           <Circle></Circle>
         </Name>
         <Resume>Resume</Resume>
