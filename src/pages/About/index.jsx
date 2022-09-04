@@ -24,26 +24,25 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
+font-family: "GT america";
 display: grid;
 grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(5, 1fr);
+grid-template-rows: repeat(6, 1fr);
 grid-column-gap: 0px;
-grid-row-gap: -500px;
+grid-row-gap: 0px;
 `;
 
 
 const CircleOne = styled.div`
-grid-area: 1 / 2 / 2 / 3;
+grid-area: 2 / 2 / 3 / 3;
 background-color: #4c6096;
 height: 50px;
 width: 50px;
 border-radius: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
+
 `;
 const CircleTwo = styled.div`
-grid-area: 2 / 1 / 3 / 2;
+grid-area: 2 / 1 / 4 / 2;
 background-color: #4c6096;
 height: 150px;
 width: 150px;
@@ -51,36 +50,35 @@ border-radius: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+
 `;
 const CircleThree = styled.div`
-grid-area: 3 / 2 / 4 / 3;
+grid-area: 3 / 2 / 5 / 3;
 background-color: #4c6096;
-height: 150px;
-width: 150px;
+height: 170px;
+width: 170px;
 border-radius: 100%;
 display: flex;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 `;
 const CircleFour = styled.div`
-grid-area: 4 / 1 / 5 / 2;
+grid-area: 4 / 1 / 6 / 2;
 background-color: #4c6096;
-height: 150px;
-width: 150px;
+height: 170px;
+width: 170px;
 border-radius: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
 `;
 const CircleFive = styled.div`
-grid-area: 5 / 2 / 6 / 3;
+grid-area: 5 / 2 / 7 / 3;
 background-color: #4c6096;
 height: 50px;
 width: 50px;
 border-radius: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
 `;
 
 
