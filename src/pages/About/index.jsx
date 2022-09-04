@@ -11,8 +11,10 @@ const AboutSection = styled.section`
   background: #0d0d0d;
   color: white;
   display: flex;
+  justify-content: space-between;
   padding: 50px;
   padding-top: 125px;
+  padding-right: 125px;
 `;
 
 const Left = styled.div`
@@ -26,8 +28,62 @@ display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-template-rows: repeat(5, 1fr);
 grid-column-gap: 0px;
-grid-row-gap: 0px;
+grid-row-gap: -500px;
 `;
+
+
+const CircleOne = styled.div`
+grid-area: 1 / 2 / 2 / 3;
+background-color: #4c6096;
+height: 50px;
+width: 50px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const CircleTwo = styled.div`
+grid-area: 2 / 1 / 3 / 2;
+background-color: #4c6096;
+height: 150px;
+width: 150px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const CircleThree = styled.div`
+grid-area: 3 / 2 / 4 / 3;
+background-color: #4c6096;
+height: 150px;
+width: 150px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const CircleFour = styled.div`
+grid-area: 4 / 1 / 5 / 2;
+background-color: #4c6096;
+height: 150px;
+width: 150px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const CircleFive = styled.div`
+grid-area: 5 / 2 / 6 / 3;
+background-color: #4c6096;
+height: 50px;
+width: 50px;
+border-radius: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+
+
 
 export default function WelcomeBand() {
   return (
@@ -65,11 +121,11 @@ export default function WelcomeBand() {
           </p>
         </Left>
         <Right>
-          <circle style={{gridArea: 1 / 2 / 2 / 3}}></circle>
-          <circle style={{gridArea: 2 / 1 / 3 / 2}}>Web integration</circle>
-          <circle style={{gridArea: 3 / 2 / 4 / 3}}>Frontend development</circle>
-          <circle style={{gridArea: 4 / 1 / 5 / 2}}>UX/UI design</circle>
-          <circle style={{gridArea: 5 / 2 / 6 / 3}}></circle>
+          <CircleOne></CircleOne>
+          <CircleTwo>Web integration</CircleTwo>
+          <CircleThree>Frontend development</CircleThree>
+          <CircleFour>UX/UI design</CircleFour>
+          <CircleFive></CircleFive>
         </Right>
       </AboutSection>
     </>
