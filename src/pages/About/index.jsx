@@ -12,7 +12,7 @@ const AboutSection = styled.section`
   color: white;
   display: flex;
   justify-content: space-between;
-  padding: 50px;
+  padding: 70px;
   padding-top: 125px;
   padding-right: 125px;
 `;
@@ -39,7 +39,8 @@ background-color: #4c6096;
 height: 50px;
 width: 50px;
 border-radius: 100%;
-
+-webkit-box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 10px #4c6096;
 `;
 const CircleTwo = styled.div`
 grid-area: 2 / 1 / 4 / 2;
@@ -50,7 +51,8 @@ border-radius: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
-
+-webkit-box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 10px #4c6096;
 `;
 const CircleThree = styled.div`
 grid-area: 3 / 2 / 5 / 3;
@@ -62,6 +64,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
+-webkit-box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 10px #4c6096;
 `;
 const CircleFour = styled.div`
 grid-area: 4 / 1 / 6 / 2;
@@ -72,6 +76,8 @@ border-radius: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+-webkit-box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 10px #4c6096;
 `;
 const CircleFive = styled.div`
 grid-area: 5 / 2 / 7 / 3;
@@ -79,6 +85,9 @@ background-color: #4c6096;
 height: 50px;
 width: 50px;
 border-radius: 100%;
+margin-left: 25px;
+-webkit-box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 10px #4c6096;
 `;
 
 
@@ -98,7 +107,7 @@ export default function WelcomeBand() {
             }}
           >
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
-            &nbsp;About Me
+            &nbsp;ABOUT ME
           </h1>
           <p style={{ lineHeight: "1.1" }}>
             I am a{" "}
@@ -120,9 +129,9 @@ export default function WelcomeBand() {
         </Left>
         <Right>
           <CircleOne></CircleOne>
-          <CircleTwo>Web integration</CircleTwo>
-          <CircleThree>Frontend development</CircleThree>
-          <CircleFour>UX/UI design</CircleFour>
+          <CircleTwo style={{textAlign: "center"}}>Web<br/> integration</CircleTwo>
+          <CircleThree style={{textAlign: "center"}}>Frontend development</CircleThree>
+          <CircleFour>UX/UI<br/> design</CircleFour>
           <CircleFive></CircleFive>
         </Right>
       </AboutSection>
