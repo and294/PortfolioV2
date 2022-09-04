@@ -17,6 +17,7 @@ padding: 50px;
 const Left = styled.div`
 width: 50%;
 font-size: 28px;
+font-family: Plantin;
 `;
 
 const Right = styled.div``;
@@ -26,7 +27,7 @@ export default function WelcomeBand() {
     <>
       <AboutSection>
         <Left>
-          <h1 style={{ fontSize: "16px", fontFamily: "GT america"}}><span style={{color: "#4c6096"}}>&#x2022;</span>&nbsp;About Me</h1>
+          <h1 style={{ fontSize: "18px", fontFamily: "GT america", marginBottom: "25px"}}><span style={{color: "#4c6096"}}>&#x2022;</span>&nbsp;About Me</h1>
           <p>
             I am a <span  style={{color: "#4c6096"}}>self thaught front-end developer</span> from Paris. <br/><br/>With diplomas in
             international sales and marketing, I've spent the last few years in

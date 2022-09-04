@@ -38,3 +38,10 @@ video {
     url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/GT%20America%20Extended%20Bold.ttf?v=1662029353336")
       format("ttf");
 }
+
+@font-face {
+  font-family: "Plantin";
+  src: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/PlantinMTProRg.TTF?v=1662300862700"),
+    url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/PlantinMTProRg.TTF?v=1662300862700")
+      format("ttf");
+}
