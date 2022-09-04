@@ -94,22 +94,6 @@ const Welcome = styled.div`
 `;
 
 export default function Home() {
-  const welcomeText = useRef();
-  const welcomeInner = useRef();
-
-  useEffect(() => {
-    gsap.to(welcomeInner.current, {
-      x: -500,
-      duration: 1,
-      scrollTrigger: {
-        trigger: welcomeInner.current,
-        markers: false,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true
-      }
-    });
-  }, []);
 
   return (
     <>
@@ -145,20 +129,6 @@ export default function Home() {
         <Resume>Resume</Resume>
         <Scroll>Scroll</Scroll>
       </Landing>
-      <WelcomeStrip>
-        <WelcomeInner ref={welcomeInner}>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-        </WelcomeInner>
-      </WelcomeStrip>
-      <div style={{height: "100000px"}}></div>
     </>
   );
 }

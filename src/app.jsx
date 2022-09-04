@@ -1,15 +1,18 @@
 import React from "react";
 
-// Import the Home page component
-import Home from "./pages/Home";
 
-// Import and apply CSS stylesheet
+import Home from "./pages/Home";
+import WelcomeBand from "/src/pages/WelcomeBand";
+import About from "/src/pages/About";
+
 import "./styles/styles.css";
 
 export default function App() {
   return (
     <>
      <Home />
+      <WelcomeBand />
+      <About />
     </>
   );
 }
