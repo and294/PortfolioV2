@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
-import keyframes from "styled-components";
+import {keyframes} from "styled-components";
 
 const WorkSection = styled.section`
   background: #181818;
@@ -64,24 +64,24 @@ justify-content: center;
 align-items: center;
 width: 350px;
 height: 350px;
-border-radius: 5px;
-border: solid 3px #373737;
-transition: 0.3s;
+border-radius: 7px;
+border: solid 6px #373737;
+transition: 0.75s;
 &:hover{
 background-color: #181818;
 }
 `;
 
 const zoom = keyframes`
-0% {transform: scale(0)}
-50% {transform: scame(1.5)}
-100% {transform: scale(0)}
+0% {transform: scale(1);}
+50% {transform: scale(1.15);}
+100% {transform: scale(1);}
 `;
 
 const AppImg = styled.img`
 width: 70%;
 &:hover{
-animation: ${};
+animation: ${zoom} 1s ease;
 }
 `;
 
