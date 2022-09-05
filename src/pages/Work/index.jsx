@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import styled from "styled-components";
+import {styled, keyframes} from "styled-components";
 
 const WorkSection = styled.section`
   background: #181818;
@@ -58,6 +58,9 @@ const AppGrid = styled.div`
 
 const App = styled.div`
 background-color: #373737;
+display: flex;
+justify-content: center;
+align-items: center;
 width: 350px;
 height: 350px;
 border-radius: 5px;
@@ -66,6 +69,14 @@ transition: 0.3s;
 &:hover{
 background-color: #181818;
 }
+`;
+
+const zoom = keyframes`
+
+`;
+
+const AppImg = styled.img`
+width: 70%;
 `;
 
 export default function Work() {
@@ -167,7 +178,7 @@ export default function Work() {
         </ProjectRight>
 
         <AppGrid>
-          <App></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/></App>
           <App></App>
           <App></App>
           <App></App>
