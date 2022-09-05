@@ -36,6 +36,8 @@ width: 55%;
 border-radius: 5px;
 `;
 
+const ProjectTitle = styled
+
 const DescriptionRight = styled.div`
 margin-left: 150px;
 `;
@@ -67,7 +69,7 @@ export default function Work() {
           width= '50%'
           />
           <DescriptionRight>
-          <p>Concept  restaurant</p>
+          <h3>Concept  restaurant</h3>
           <p style={{ width: "300px",borderTop: "solid 1px white", borderBottom: "solid 1px white", margin: "20px 0px 20px 0px", padding: "20px 0px 20px 0px"}}>Personnal project</p>
           <p>HTML CSS<br/>Javascript Gsap</p>
           </DescriptionRight>         
@@ -75,7 +77,7 @@ export default function Work() {
         
         <ProjectLeft style={{marginTop: "100px"}}>     
           <DescriptionLeft>
-          <p>Freelance agency</p>
+          <h3>Freelance agency</h3>
           <p style={{ width: "300px",borderTop: "solid 1px white", borderBottom: "solid 1px white", margin: "20px 0px 20px 0px", padding: "20px 0px 20px 0px"}}>Personnal project</p>
           <p>HTML CSS<br/>ReactJS Gsap</p>
           </DescriptionLeft>
@@ -85,13 +87,13 @@ export default function Work() {
         </ProjectLeft>
         
         <ProjectRight style={{marginTop: "100px"}}>
-        <StyledImg src={'https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%201BB58%20landing.png?v=1662370725354'}
+        <StyledImg src={'https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%201BB58%20landing.png?v=1662371147279'}
           width= '50%'
           />
           <DescriptionRight>
-          <p>Concept  restaurant</p>
+          <h3>Tudor BlackBay 58 redesign</h3>
           <p style={{ width: "300px",borderTop: "solid 1px white", borderBottom: "solid 1px white", margin: "20px 0px 20px 0px", padding: "20px 0px 20px 0px"}}>Personnal project</p>
-          <p>HTML CSS<br/>Javascript Gsap</p>
+          <p>Figma</p>
           </DescriptionRight>         
         </ProjectRight>
       </WorkSection>
