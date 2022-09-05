@@ -5,7 +5,8 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import {styled, keyframes} from "styled-components";
+import styled from "styled-components";
+import keyframes from "styled-components";
 
 const WorkSection = styled.section`
   background: #181818;
@@ -72,11 +73,16 @@ background-color: #181818;
 `;
 
 const zoom = keyframes`
-
+0% {transform: scale(0)}
+50% {transform: scame(1.5)}
+100% {transform: scale(0)}
 `;
 
 const AppImg = styled.img`
 width: 70%;
+&:hover{
+animation: ${};
+}
 `;
 
 export default function Work() {
