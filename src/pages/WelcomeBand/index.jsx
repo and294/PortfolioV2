@@ -63,6 +63,10 @@ export default function WelcomeBand() {
           <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
           <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
           <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
+          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
         </WelcomeInner>
       </WelcomeStrip>
   )
