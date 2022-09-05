@@ -10,6 +10,7 @@ import styled from "styled-components";
 const AboutSection = styled.section`
   background: #181818;
   color: white;
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 70px;

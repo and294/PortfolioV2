@@ -13,8 +13,8 @@ const WelcomeStrip = styled.section`
   font-family: "SaintMonica";
   font-size: 2.5em;
   padding: 32px 0;
-
   position: relative;
+  width: 100vw;
   overflow: hidden;
 `;
 
@@ -24,6 +24,7 @@ const WelcomeInner = styled.div`
   display: flex;
   flex: auto;
   flex-direction: row;
+  
 `;
 
 const Welcome = styled.div`
@@ -46,28 +47,54 @@ export default function WelcomeBand() {
         markers: false,
         start: "top bottom",
         end: "bottom top",
-        scrub: true
-      }
+        scrub: true,
+      },
     });
   }, []);
-  
-  return(
-  <WelcomeStrip>
-        <WelcomeInner ref={welcomeInner}>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-          <div ref={welcomeText} style={{opacity: "0.5"}}>&nbsp;&#x2022;&nbsp;WELCOME</div>
-        </WelcomeInner>
-      </WelcomeStrip>
-  )
-};
+
+  return (
+    <WelcomeStrip>
+      <WelcomeInner ref={welcomeInner}>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+        <div ref={welcomeText} style={{ opacity: "0.5" }}>
+          &nbsp;&#x2022;&nbsp;WELCOME
+        </div>
+      </WelcomeInner>
+    </WelcomeStrip>
+  );
+}
