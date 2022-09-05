@@ -53,13 +53,19 @@ const AppGrid = styled.div`
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   margin-top: 120px;
-  border-radius: 5px;
+  
 `;
 
 const App = styled.div`
 background-color: #373737;
 width: 350px;
 height: 350px;
+border-radius: 5px;
+border: solid 3px #373737;
+transition: 0.3s;
+&:hover{
+background-color: #181818;
+}
 `;
 
 export default function Work() {
