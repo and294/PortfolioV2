@@ -34,7 +34,7 @@ margin-left: 150px;
 `;
 
 const DescriptionLeft = styled.div`
-
+margin-right: 150px;
 `;
 
 export default function Work() {
@@ -61,8 +61,9 @@ export default function Work() {
           />
           <DescriptionRight>
           <p>Concept  restaurant</p>
-          <p>Personnal project</p>
+          <p style={{ width: "300px",borderTop: "solid 1px white", borderBottom: "solid 1px white", margin: "20px 0px 20px 0px", padding: "20px 0px 20px 0px"}}>Personnal project</p>
           <p>HTML CSS<br/>Javascript Gsap</p>
+            <button>See it live</button>
           </DescriptionRight>         
         </Project>
       </WorkSection>

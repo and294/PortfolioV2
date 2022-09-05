@@ -12,16 +12,17 @@ const AboutSection = styled.section`
   color: white;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
+  
   padding: 70px;
   padding-top: 125px;
-  padding-right: 125px;
+  
 `;
 
 const Left = styled.div`
   width: 50%;
   font-size: 28px;
   font-family: Plantin;
+  margin-right: 250px;
 `;
 
 const Right = styled.div`
