@@ -65,14 +65,14 @@ const zoom = keyframes`
 
 
 const App = styled.div`
-background-color: #373737;
+background-color: #474D5F;
 display: flex;
 justify-content: center;
 align-items: center;
 width: 350px;
-height: 350px;
-border-radius: 7px;
-border: solid 6px #373737;
+height: 400px;
+border-radius: 15px;
+border: solid 6px #474D5F;
 position: relative;
 transition: 0.75s;
 
@@ -87,16 +87,29 @@ animation: ${zoom} .45s ease-Out;
 }
 `;
 
+const AppName = styled.p`
+width: 150px;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 15px;
+position: absolute;
+bottom: 0;
+margin-bottom: 10px;
+background-color: #474D5F;
+`;
+
 const Bg = styled.span`
 position: absolute;
 width: 240px;
 height:  240px;
-border-radius: 7px;
+border-radius: 15px;
 background-color: #181818;
 transition: 0.25s ease;
 ${App}:hover &{
 width: 340px;
-height: 340px;
+height: 390px;
 };
 `;
 
@@ -199,11 +212,11 @@ export default function Work() {
         </ProjectRight>
 
         <AppGrid>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg></Bg><AppName>Translator</AppName></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2033Calculator.svg?v=1662459179532"}/><Bg></Bg></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2034To%20do%20list.svg?v=1662459181187"}/><Bg></Bg></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2035Drum%20machine.svg?v=1662459182865"}/><Bg></Bg></App>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2036Clock.svg?v=1662459185034"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2041Clock.svg?v=1662459438222"}/><Bg></Bg></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2037Wiki%20viewer.svg?v=1662459187558"}/><Bg></Bg></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2038Radom%20quote.svg?v=1662459189656"}/><Bg></Bg></App>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2039Weather%20app.svg?v=1662459191651"}/><Bg></Bg></App>
