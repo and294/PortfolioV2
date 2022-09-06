@@ -83,7 +83,7 @@ const AppImg = styled.img`
 width: 70%;
 z-index: 1;
 ${App}:hover &{
-animation: ${zoom} .5s ease-Out;
+animation: ${zoom} .35s ease-Out;
 }
 `;
 
@@ -91,9 +91,9 @@ const Bg = styled.span`
 position: absolute;
 width: 240px;
 height:  240px;
-border-radius: 20px;
-background-color: white;
-transition: 0.5s;
+border-radius: 7px;
+background-color: #181818;
+transition: 0.25s;
 ${App}:hover &{
 width: 340px;
 height: 340px;
