@@ -199,15 +199,15 @@ export default function Work() {
         </ProjectRight>
 
         <AppGrid>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
-          <App></App>
-          <App></App>
-          <App></App>
-          <App></App>
-          <App></App>
-          <App></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2033Calculator.svg?v=1662459179532"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2034To%20do%20list.svg?v=1662459181187"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2035Drum%20machine.svg?v=1662459182865"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2036Clock.svg?v=1662459185034"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2037Wiki%20viewer.svg?v=1662459187558"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2038Radom%20quote.svg?v=1662459189656"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2039Weather%20app.svg?v=1662459191651"}/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2040Timer.svg?v=1662459193455"}/><Bg></Bg></App>
         </AppGrid>
       </WorkSection>
     </>
