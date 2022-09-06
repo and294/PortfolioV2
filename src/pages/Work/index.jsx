@@ -57,6 +57,13 @@ const AppGrid = styled.div`
   
 `;
 
+const zoom = keyframes`
+0% {transform: scale(1);}
+50% {transform: scale(1.15);}
+100% {transform: scale(1);}
+`;
+
+
 const App = styled.div`
 background-color: #373737;
 display: flex;
@@ -71,16 +78,11 @@ transition: 0.75s;
 
 `;
 
-const zoom = keyframes`
-0% {transform: scale(1);}
-50% {transform: scale(1.15);}
-100% {transform: scale(1);}
-`;
 
 const AppImg = styled.img`
 width: 70%;
 z-index: 1;
-&:hover{
+${App}:hover &{
 animation: ${zoom} .5s ease-Out;
 }
 `;
@@ -92,7 +94,7 @@ height:  240px;
 border-radius: 20px;
 background-color: white;
 transition: 0.5s;
-&:hover ~ ${App}{
+${App}:hover &{
 width: 340px;
 height: 340px;
 };
@@ -197,7 +199,7 @@ export default function Work() {
         </ProjectRight>
 
         <AppGrid>
-          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"} className="appImg"/><Bg></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
           <App></App>
           <App></App>
           <App></App>
