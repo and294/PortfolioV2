@@ -83,7 +83,7 @@ const AppImg = styled.img`
 width: 70%;
 z-index: 1;
 ${App}:hover &{
-animation: ${zoom} .35s ease-Out;
+animation: ${zoom} .45s ease-Out;
 }
 `;
 
@@ -93,7 +93,7 @@ width: 240px;
 height:  240px;
 border-radius: 7px;
 background-color: #181818;
-transition: 0.25s;
+transition: 0.25s ease;
 ${App}:hover &{
 width: 340px;
 height: 340px;
@@ -200,8 +200,8 @@ export default function Work() {
 
         <AppGrid>
           <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
-          <App></App>
-          <App></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
+          <App><AppImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"}/><Bg className="Bg"></Bg></App>
           <App></App>
           <App></App>
           <App></App>
