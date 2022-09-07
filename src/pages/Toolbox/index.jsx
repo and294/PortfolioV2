@@ -19,14 +19,17 @@ const ToolboxSection = styled.section`
 `;
 
 const TopRow = styled.div`
+margin-top: 100px;
 display: flex;
 align-items: center;
 justify-content: space-between;
 `;
 
 const BottomRow = styled.div`
+margin-top: 30px;
 display: flex;
 align-items: center;
+justify-content: space-between;
 `;
 
 
@@ -39,19 +42,19 @@ width: 25%;
 `;
 
 const Jquery = styled.img`
-
+width: 28%;
 `;
 
 const Mongo = styled.img`
-
+width: 30%;
 `;
 
 const Figma = styled.img`
-
+width: 8%;
 `;
 
 const AI = styled.img`
-
+width: 12%;
 `;
 
 
