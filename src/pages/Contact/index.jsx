@@ -57,8 +57,12 @@ width: 1000px;
 font-size: 1.5em;
 color: white;
 background-color: #181818;
+margin-bottom: 50px;
 border: none;
 border-bottom: solid 2px white;
+  &:focus {
+  outline: none;
+  }
 `;
 
 const MailInput = styled.input`
@@ -66,18 +70,26 @@ width: 1000px;
 font-size: 1.5em;
 color: white;
 background-color: #181818;
+margin-bottom: 50px;
 border: none;
 border-bottom: solid 2px white;
+&:focus {
+  outline: none;
+  }
 `;
 
-const Message = styled.input`
+const Message = styled.textarea`
 width: 1000px;
 font-size: 1.5em;
 height: 300px;
+tex-align: top;
 color: white;
 background-color: #181818;
 border: none;
 border-bottom: solid 2px white;
+&:focus {
+  outline: none;
+  }
 `;
 
 
