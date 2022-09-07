@@ -24,7 +24,7 @@ const WorkSection = styled.section`
 const Title = styled.h1`
   font-size: 18px;
   font-family: "GT america";
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   display: flex;
   align-items: center;
 `;

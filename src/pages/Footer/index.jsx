@@ -12,9 +12,10 @@ const FooterSection = styled.section`
   color: white;
   width: 100vw;
   display: flex;
-  padding: 70px;
-  padding-top: 125px;
-  
+  padding: 30px;
+  padding-top: 70px;
+  display: flex;
+  justify-content: flex-end;
 `;
 
 const Left = styled.div`
@@ -22,7 +23,6 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
-
 `;
 
 
