@@ -92,6 +92,18 @@ border-bottom: solid 2px white;
   }
 `;
 
+const Submit = styled.button`
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-family: GT america;
+  background-color: #4c6096;
+  border: none;
+  border-radius: 25px;
+  margin: 50px;
+  align-self: flex-end;
+`;
+
 
 export default function Contact() {
   return (
@@ -106,6 +118,7 @@ export default function Contact() {
          <Name type="text" placeholder="Full Name"></Name>
           <MailInput type="text" placeholder="Email"></MailInput>
           <Message type="text" placeholder="Message"></Message>
+          <Submit>Submit</Submit>
         </Right>
       </ContactSection>
     </>

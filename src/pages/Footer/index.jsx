@@ -35,7 +35,7 @@ export default function Footer() {
           
         </Left>
         <Right>
-          
+          <p>&copy; 2022. Andrea Ferraro</p>
         </Right>
       </FooterSection>
     </>
