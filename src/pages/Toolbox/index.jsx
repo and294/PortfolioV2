@@ -18,29 +18,58 @@ const ToolboxSection = styled.section`
   align-items: center;
 `;
 
-const TopRow = styled.div``;
+const TopRow = styled.div`
+display: flex;
+align-items: center;
+justify-content: space-between;
+`;
 
-const BottomRow = styled.div``;
+const BottomRow = styled.div`
+display: flex;
+align-items: center;
+`;
 
-const Tool = styled.img`
+
+const HtmlCssJs = styled.img`
 width: 20%;
 `;
+
+const ReactImg = styled.img`
+width: 25%;
+`;
+
+const Jquery = styled.img`
+
+`;
+
+const Mongo = styled.img`
+
+`;
+
+const Figma = styled.img`
+
+`;
+
+const AI = styled.img`
+
+`;
+
 
 export default function Toolbox() {
   return (
     <>
       <ToolboxSection>
         <TopRow>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/html.svg?v=1662541856745"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/css.svg?v=1662541852437"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/js.svg?v=1662541864104"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/react.svg?v=1662541867672"}/>
+          <HtmlCssJs src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2050html%20no%20text.svg?v=1662543210519"}/>
+          <HtmlCssJs src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2051css%20no%20text.svg?v=1662543211648"}/>
+          <HtmlCssJs src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/js.svg?v=1662541864104"}/>
+          <ReactImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2052react%20no%20bg.svg?v=1662543368819"}/>
         </TopRow>
         <BottomRow>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/jquery.svg?v=1662541861993"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mongo%20(1).svg?v=1662541866003"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/figma.svg?v=1662541854665"}/>
-          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/illustrator.svg?v=1662541859278"}/>
+          <Jquery src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/jquery.svg?v=1662541861993"}/>
+          <Mongo src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mongo%20(1).svg?v=1662541866003"}/>
+          <Figma src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/figma.svg?v=1662541854665"}/>
+          <AI src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/illustrator.svg?v=1662541859278"}/>
         </BottomRow>
       </ToolboxSection>
     </>
