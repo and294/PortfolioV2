@@ -22,16 +22,16 @@ const WorkSection = styled.section`
 `;
 
 const Title = styled.h1`
-  font-size: "18px";
+  font-size: 18px;
   font-family: "GT america";
-  margin-bottom: "25px";
-  display: "flex";
-  align-items: "center";
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
 `;
 
 const Dot = styled.span`
-color: "#4c6096";
-font-size: "35px";
+  color: #4c6096;
+  font-size: 35px;
 `;
 
 const ProjectRight = styled.div`

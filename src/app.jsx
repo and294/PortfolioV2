@@ -6,6 +6,8 @@ import About from "/src/pages/About";
 import Work from "/src/pages/Work";
 import ToolBand from "/src/pages/ToolBand";
 import Toolbox from "/src/pages/Toolbox";
+import Contact from "/src/pages/Contact";
+import Footer from "/src/pages/Footer";
 
 import "./styles/styles.css";
 
@@ -18,6 +20,8 @@ export default function App() {
       <Work />
       <ToolBand />
       <Toolbox />
+      <Contact />
+      <Footer />
     </>
   );
 }
