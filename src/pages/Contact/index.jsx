@@ -12,6 +12,7 @@ const ContactSection = styled.section`
   color: white;
   width: 100vw;
   display: flex;
+  justify-content: space-between;
   padding: 70px;
   padding-top: 125px;
   font-family: "GT america";
@@ -23,6 +24,7 @@ const Left = styled.div`
 
 const Title = styled.h1`
 font-size: 3.5em;
+margin-bottom: 100px;
 `;
 
 const Mail = styled.p`
@@ -46,9 +48,37 @@ margin-right: 15px;
 `;
 
 const Right = styled.div`
-
+display: flex;
+flex-direction: column;
 `;
 
+const Name = styled.input`
+width: 1000px;
+font-size: 1.5em;
+color: white;
+background-color: #181818;
+border: none;
+border-bottom: solid 2px white;
+`;
+
+const MailInput = styled.input`
+width: 1000px;
+font-size: 1.5em;
+color: white;
+background-color: #181818;
+border: none;
+border-bottom: solid 2px white;
+`;
+
+const Message = styled.input`
+width: 1000px;
+font-size: 1.5em;
+height: 300px;
+color: white;
+background-color: #181818;
+border: none;
+border-bottom: solid 2px white;
+`;
 
 
 export default function Contact() {
@@ -61,7 +91,9 @@ export default function Contact() {
           <Phone><PhoneImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/phone%20bg.svg?v=1662546558035"}/>+33 6 87 80 22 06</Phone>
         </Left>
         <Right>
-          
+         <Name type="text" placeholder="Full Name"></Name>
+          <MailInput type="text" placeholder="Email"></MailInput>
+          <Message type="text" placeholder="Message"></Message>
         </Right>
       </ContactSection>
     </>
