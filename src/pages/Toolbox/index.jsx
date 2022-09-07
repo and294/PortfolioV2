@@ -16,32 +16,31 @@ const ToolboxSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px;
-  padding-top: 125px;
 `;
 
 const TopRow = styled.div``;
 
 const BottomRow = styled.div``;
 
-const Tool
+const Tool = styled.img`
+width: 20%;
+`;
 
 export default function Toolbox() {
   return (
     <>
       <ToolboxSection>
         <TopRow>
-          
-          <Tool></Tool>
-          <Tool></Tool>
-          <Tool></Tool>
-          <Tool></Tool>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/html.svg?v=1662541856745"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/css.svg?v=1662541852437"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/js.svg?v=1662541864104"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/react.svg?v=1662541867672"}/>
         </TopRow>
         <BottomRow>
-        ool>
-          <Tool></Tool>
-          <Tool></Tool>
-          <Tool></Tool>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/jquery.svg?v=1662541861993"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mongo%20(1).svg?v=1662541866003"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/figma.svg?v=1662541854665"}/>
+          <Tool src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/illustrator.svg?v=1662541859278"}/>
         </BottomRow>
       </ToolboxSection>
     </>
