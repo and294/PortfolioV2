@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
-
 const ToolboxSection = styled.section`
   background: #181818;
   color: white;

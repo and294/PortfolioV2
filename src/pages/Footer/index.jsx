@@ -7,7 +7,6 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 
-
 const FooterSection = styled.section`
   background: #181818;
   color: white;
