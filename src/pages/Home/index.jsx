@@ -8,7 +8,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import Navbar from "/src/pages/Navbar";
 import sizes from "/src/styles/Devices";
-import device from "/src/styles/Devices";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -32,14 +31,7 @@ const NameSection = styled.div`
   align-items: center;
   position: relative;
 
-  @media ${device.mobileS} {
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-  } ;
+ 
 `;
 
 const Name = styled.h1`
@@ -47,57 +39,26 @@ const Name = styled.h1`
   font-family: "SaintMonica";
   z-index: 10;
   text-align: center;
-  @media ${device.mobileS} {
-    font-size: 36px;
-  }
-  @media ${device.mobileM} {
-    font-size: 40px;
-  }
-  @media ${device.tablet} {
-    font-size: 90px;
-  }
-  @media ${device.laptop} {
-    font-size: 126px;
-  } ;
+  
 `;
 
 const Frontend = styled.h2`
   font-family: "GT america";
   z-index: 10;
-  @media ${device.mobileS} {
-    font-size: 14px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-    font-size: 20px;
-  }
-  @media ${device.laptop} {
-    font-size: 34px;
-  } ;
+  
 `;
 
 const Line = styled.span`
   height: 2px;
   background-color: rgb(76, 96, 150);
   margin: 10px;
-
+  
 `;
 
 const Paris = styled.p`
   z-index: 10;
   font-family: "GT america";
-  @media ${device.mobileS} {
-    font-size: 10px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-    font-size: 12px;
-  }
-  @media ${device.laptop} {
-    font-size: 14px;
-  } ;
+  
 `;
 
 const Circle = styled.span`
@@ -109,23 +70,7 @@ const Circle = styled.span`
   z-index: 0;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
-  @media ${device.mobileS} {
-    width: 300px;
-    height: 300px;
-    border: solid #4c6096 5px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-    width: 400px;
-    height: 400px;
-    border: solid #4c6096 7px;
-  }
-  @media ${device.laptop} {
-    width: 500px;
-    height: 500px;
-    border: solid #4c6096 10px;
-  } ;
+  
 `;
 
 const Resume = styled.button`
@@ -136,24 +81,7 @@ const Resume = styled.button`
   position: absolute;
   bottom: 0;
   left: 0;
-  @media ${device.mobileS} {
-    font-size: 0.75em;
-    margin: 20px;
-    width: 75px;
-    height: 40px;
-    border-radius: 20px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-    font-size: 1em;
-    margin: 50px;
-    width: 100px;
-    height: 50px;
-    border-radius: 25px;
-  } ;
+  
 `;
 
 const Scroll = styled.p`
@@ -165,22 +93,7 @@ const Scroll = styled.p`
   border-left: solid #4c6096;
   display: flex;
   align-items: center;
-  @media ${device.mobileS} {
-    font-size: 0.75em;
-    margin: 20px;
-    padding: 10px;
-    height: 50px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-    font-size: 1em;
-    margin: 50px;
-    padding: 10px;
-    height: 80px;
-  } ;
+  
 `;
 
 export default function Home() {
