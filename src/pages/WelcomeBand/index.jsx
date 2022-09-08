@@ -7,15 +7,45 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 
+export const sizes = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "428px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+export const device = {
+  mobileS: `(min-width: ${sizes.mobileS})`,
+  mobileM: `(min-width: ${sizes.mobileM})`,
+  mobileL: `(min-width: ${sizes.mobileL})`,
+  tablet: `(min-width: ${sizes.tablet})`,
+  laptop: `(min-width: ${sizes.laptop})`,
+  laptopL: `(min-width: ${sizes.laptopL})`,
+  desktop: `(min-width: ${sizes.desktop})`,
+};
+
+
 const WelcomeStrip = styled.section`
   background: #4c6096;
   color: #eee;
-  font-family: "SaintMonica";
-  font-size: 2.5em;
-  padding: 32px 0;
+  font-family: "SaintMonica"; 
   position: relative;
   width: 100vw;
   overflow: hidden;
+  @media ${device.mobileS} {
+  font-size: 1.5em;
+  padding: 20px 0;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  font-size: 2.5em;
+  padding: 32px 0;
+  } ;
 `;
 
 const WelcomeInner = styled.div`
