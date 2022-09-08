@@ -7,27 +7,11 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import Navbar from "/src/pages/Navbar";
+import sizes from "/src/styles/Devices";
+import device from "/src/styles/Devices";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export const sizes = {
-  mobileS: "320px",
-  mobileM: "375px",
-  mobileL: "428px",
-  tablet: "768px",
-  laptop: "1024px",
-  laptopL: "1440px",
-  desktop: "2560px",
-};
-export const device = {
-  mobileS: `(min-width: ${sizes.mobileS})`,
-  mobileM: `(min-width: ${sizes.mobileM})`,
-  mobileL: `(min-width: ${sizes.mobileL})`,
-  tablet: `(min-width: ${sizes.tablet})`,
-  laptop: `(min-width: ${sizes.laptop})`,
-  laptopL: `(min-width: ${sizes.laptopL})`,
-  desktop: `(min-width: ${sizes.desktop})`,
-};
 
 const Landing = styled.section`
   background: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.png?v=1662027272290");
@@ -78,7 +62,6 @@ const Name = styled.h1`
 `;
 
 const Frontend = styled.h2`
-  
   font-family: "GT america";
   z-index: 10;
   @media ${device.mobileS} {
@@ -87,10 +70,10 @@ const Frontend = styled.h2`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-    font-size: 20px;  
+    font-size: 20px;
   }
   @media ${device.laptop} {
-  font-size: 34px;
+    font-size: 34px;
   } ;
 `;
 
@@ -104,15 +87,14 @@ const Line = styled.span`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-     width: 150px; 
+    width: 150px;
   }
   @media ${device.laptop} {
-  width: 180px;
-  
+    width: 180px;
   } ;
 `;
 
-const Paris = styled.p` 
+const Paris = styled.p`
   z-index: 10;
   font-family: "GT america";
   @media ${device.mobileS} {
@@ -121,10 +103,10 @@ const Paris = styled.p`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  font-size: 12px;
+    font-size: 12px;
   }
   @media ${device.laptop} {
-  font-size: 14px;
+    font-size: 14px;
   } ;
 `;
 
@@ -145,18 +127,18 @@ const Circle = styled.span`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  width: 400px;
-  height: 400px;
-  border: solid #4c6096 7px;
+    width: 400px;
+    height: 400px;
+    border: solid #4c6096 7px;
   }
   @media ${device.laptop} {
-  width: 500px;
-  height: 500px;
-  border: solid #4c6096 10px;
+    width: 500px;
+    height: 500px;
+    border: solid #4c6096 10px;
   } ;
 `;
 
-const Resume = styled.button`  
+const Resume = styled.button`
   color: white;
   font-family: GT america;
   background-color: #4c6096;
@@ -165,22 +147,22 @@ const Resume = styled.button`
   bottom: 0;
   left: 0;
   @media ${device.mobileS} {
-  font-size: 0.75em;
-  margin: 20px;
-  width: 75px;
-  height: 40px;
-  border-radius: 20px;
+    font-size: 0.75em;
+    margin: 20px;
+    width: 75px;
+    height: 40px;
+    border-radius: 20px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  font-size: 1em;
-  margin: 50px;
-  width: 100px;
-  height: 50px;
-  border-radius: 25px;
+    font-size: 1em;
+    margin: 50px;
+    width: 100px;
+    height: 50px;
+    border-radius: 25px;
   } ;
 `;
 
@@ -188,24 +170,26 @@ const Scroll = styled.p`
   position: absolute;
   bottom: 0;
   right: 0;
-  
+
   font-family: GT america;
   border-left: solid #4c6096;
   display: flex;
   align-items: center;
   @media ${device.mobileS} {
-   margin: 50px;
-  padding: 10px;
-  height: 50px;
+    font-size: 0.75em;
+    margin: 20px;
+    padding: 10px;
+    height: 50px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  margin: 50px;
-  padding: 10px;
-  height: 80px;
+    font-size: 1em;
+    margin: 50px;
+    padding: 10px;
+    height: 80px;
   } ;
 `;
 
