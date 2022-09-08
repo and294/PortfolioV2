@@ -6,18 +6,18 @@ import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
-import sizes from "/src/styles/Devices";
-import device from "/src/styles/Devices";
+
 
 const WelcomeStrip = styled.section`
   background: #4c6096;
   color: #eee;
-  font-family: "SaintMonica";
-  font-size: 2.5em;
-  padding: 32px 0;
+  font-family: "SaintMonica"; 
   position: relative;
   width: 100vw;
   overflow: hidden;
+  font-size: 2.5em;
+  padding: 32px 0;
+  
 `;
 
 const WelcomeInner = styled.div`

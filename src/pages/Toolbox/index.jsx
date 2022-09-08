@@ -7,8 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
-import sizes from "/src/styles/Devices";
-import device from "/src/styles/Devices";
+
 
 const ToolboxSection = styled.section`
   background: #181818;

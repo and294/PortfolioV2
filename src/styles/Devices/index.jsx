@@ -4,7 +4,6 @@ import ReactDOM from "react-dom";
 import styled from "styled-components";
 
 
-
 export const sizes = {
   mobileS: "320px",
   mobileM: "375px",

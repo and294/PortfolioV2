@@ -81,17 +81,7 @@ const Line = styled.span`
   height: 2px;
   background-color: rgb(76, 96, 150);
   margin: 10px;
-  @media ${device.mobileS} {
-    width: 130px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-    width: 150px;
-  }
-  @media ${device.laptop} {
-    width: 180px;
-  } ;
+
 `;
 
 const Paris = styled.p`
