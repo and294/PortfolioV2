@@ -7,22 +7,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import Navbar from "/src/pages/Navbar";
-import sizes from "/src/styles/Devices";
 
 gsap.registerPlugin(ScrollTrigger);
-
-
-const Landing = styled.section`
-  background: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.png?v=1662027272290");
-  height: 100vh;
-  width: 100vw;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-`;
 
 const NameSection = styled.div`
   display: flex;
@@ -30,8 +16,6 @@ const NameSection = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
-
- 
 `;
 
 const Name = styled.h1`
@@ -39,29 +23,31 @@ const Name = styled.h1`
   font-family: "SaintMonica";
   z-index: 10;
   text-align: center;
-  
 `;
 
 const Frontend = styled.h2`
+  font-size: 34px;
   font-family: "GT america";
   z-index: 10;
-  
 `;
 
 const Line = styled.span`
+  width: 180px;
   height: 2px;
   background-color: rgb(76, 96, 150);
   margin: 10px;
-  
 `;
 
 const Paris = styled.p`
+  font-size: 14px;
   z-index: 10;
   font-family: "GT america";
-  
 `;
 
 const Circle = styled.span`
+  width: 500px;
+  height: 500px;
+  border: solid #4c6096 10px;
   position: absolute;
   width: 500px;
   height: 500px;
@@ -70,10 +56,14 @@ const Circle = styled.span`
   z-index: 0;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
-  
 `;
 
 const Resume = styled.button`
+  font-size: 1em;
+  margin: 50px;
+  width: 100px;
+  height: 50px;
+  border-radius: 25px;
   color: white;
   font-family: GT america;
   background-color: #4c6096;
@@ -81,10 +71,13 @@ const Resume = styled.button`
   position: absolute;
   bottom: 0;
   left: 0;
-  
 `;
 
 const Scroll = styled.p`
+  font-size: 1em;
+  margin: 50px;
+  padding: 10px;
+  height: 80px;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -93,7 +86,6 @@ const Scroll = styled.p`
   border-left: solid #4c6096;
   display: flex;
   align-items: center;
-  
 `;
 
 export default function Home() {
