@@ -32,10 +32,10 @@ const AboutSection = styled.section`
   width: 100vw;
   display: flex;
   padding: 70px;
-  
+
   @media ${device.mobileS} {
     flex-direction: column;
-    padding-top: 100px
+    padding-top: 100px;
   }
   @media ${device.mobileM} {
   }
@@ -43,13 +43,45 @@ const AboutSection = styled.section`
     flex-direction: row;
   }
   @media ${device.laptop} {
-  padding-top: 125px;
+    padding-top: 125px;
   } ;
 `;
 
 const Left = styled.div`
   font-family: Plantin;
 
+  @media ${device.mobileS} {
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    width: 50%;
+    margin-right: 250px;
+    font-size: 28px;
+  } ;
+`;
+
+const AboutTitle = styled.h1`
+
+font-family: "GT america";
+margin-bottom: 25px;
+display: flex";
+align-items: center;
+@media ${device.mobileS} {
+font-size: 12px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    font-size: 18px;
+  } ;
+`;
+
+const Dot = styled.span`
   @media ${device.mobileS} {
   }
   @media ${device.mobileM} {
@@ -71,38 +103,41 @@ const Right = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   @media ${device.mobileS} {
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   } ;
 `;
 
 const CircleOne = styled.div`
   grid-area: 2 / 2 / 3 / 3;
   background-color: #4c6096;
-  
   border-radius: 100%;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 25px;
-  width: 25px;
+    height: 25px;
+    width: 25px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
   } ;
 `;
 const CircleTwo = styled.div`
   grid-area: 2 / 1 / 4 / 2;
-  background-color: #4c6096;  
+  background-color: #4c6096;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -110,23 +145,23 @@ const CircleTwo = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 170px;
-  width: 170px;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleThree = styled.div`
   grid-area: 3 / 2 / 5 / 3;
   background-color: #4c6096;
-  height: 170px;
-  width: 170px;
   border-radius: 100%;
   display: flex;
   flex-direction: column;
@@ -135,23 +170,23 @@ const CircleThree = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 170px;
-  width: 150px;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleFour = styled.div`
   grid-area: 4 / 1 / 6 / 2;
   background-color: #4c6096;
-  height: 170px;
-  width: 170px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -159,16 +194,18 @@ const CircleFour = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 150px;
-  width: 150px;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleFive = styled.div`
@@ -181,16 +218,16 @@ const CircleFive = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 25px;
-  width: 25px;
+    height: 25px;
+    width: 25px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
   } ;
 `;
 
@@ -199,18 +236,12 @@ export default function WelcomeBand() {
     <>
       <AboutSection>
         <Left>
-          <h1
-            style={{
-              fontSize: "18px",
-              fontFamily: "GT america",
-              marginBottom: "25px",
-              display: "flex",
-              alignItems: "center",
-            }}
+          <AboutTitle
+            
           >
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
             &nbsp;ABOUT ME
-          </h1>
+          </AboutTitle>
           <p style={{ lineHeight: "1.1" }}>
             I am a{" "}
             <span style={{ color: "#4c6096" }}>
