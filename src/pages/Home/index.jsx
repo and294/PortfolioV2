@@ -10,6 +10,25 @@ import Navbar from "/src/pages/Navbar";
 
 gsap.registerPlugin(ScrollTrigger);
 
+export const sizes = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "428px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+export const device = {
+  mobileS: `(min-width: ${sizes.mobileS})`,
+  mobileM: `(min-width: ${sizes.mobileM})`,
+  mobileL: `(min-width: ${sizes.mobileL})`,
+  tablet: `(min-width: ${sizes.tablet})`,
+  laptop: `(min-width: ${sizes.laptop})`,
+  laptopL: `(min-width: ${sizes.laptopL})`,
+  desktop: `(min-width: ${sizes.desktop})`,
+};
+
 const Landing = styled.section`
   background: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.png?v=1662027272290");
   height: 100vh;
@@ -22,12 +41,44 @@ const Landing = styled.section`
   position: relative;
 `;
 
-const Name = styled.div`
+const NameSection = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  
+  @media ${device.mobileS} {
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  } ;
+`;
+
+const Name = styled.h1`
+font-size: 126px;
+  font-family: "SaintMonica";
+  z-index: 10;
+`;
+
+const Frontend = styled.h2`
+font-size: 34px;
+font-family: "GT america";
+z-index: 10;
+`;
+
+const Line = styled.span`
+width: "180px",
+              height: "2px",
+              backgroundColor: "rgb(76, 96, 150)",
+              margin: "10px",
+`;
+
+const Paris = styled.p`
+
 `;
 
 const Circle = styled.span`
@@ -68,29 +119,22 @@ const Scroll = styled.p`
   align-items: center;
 `;
 
-
 export default function Home() {
-
   return (
     <>
       <Landing>
         <Navbar />
-        <Name>
-          <h1
+        <NameSection>
+          <Name
             className="title"
-            style={{
-              fontSize: "126px",
-              fontFamily: "SaintMonica",
-              zIndex: "10",
-            }}
           >
             ANDREA FERRARO
-          </h1>
-          <h2
+          </Name>
+          <Frontend
             style={{ fontSize: "34px", fontFamily: "GT america", zIndex: "10" }}
           >
             Frontend Developer
-          </h2>
+          </Frontend>
           <span
             style={{
               width: "180px",
@@ -99,9 +143,13 @@ export default function Home() {
               margin: "10px",
             }}
           ></span>
-          <p style={{ fontSize: "14px", zIndex: "10", fontFamily: "GT america" }}>Paris, France</p>
+          <p
+            style={{ fontSize: "14px", zIndex: "10", fontFamily: "GT america" }}
+          >
+            Paris, France
+          </p>
           <Circle></Circle>
-        </Name>
+        </NameSection>
         <Resume>Resume</Resume>
         <Scroll>Scroll</Scroll>
       </Landing>
