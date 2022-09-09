@@ -36,14 +36,16 @@ const ContactSection = styled.section`
   font-family: "GT america";
   @media ${device.mobileS} {
   flex-direction: column;
-  
+  align-items: center;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
-  @media ${device.laptop} { 
+  @media ${device.laptopL} { 
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   } ;
 `;
 
@@ -79,10 +81,19 @@ margin-right: 15px;
 const Right = styled.div`
 display: flex;
 flex-direction: column;
+  @media ${device.mobileS} {
+  align-items: center;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} { 
+  } ;
 `;
 
 const Name = styled.input`
-width: 1000px;
+
 font-size: 1.5em;
 color: white;
 background-color: #181818;
@@ -92,6 +103,18 @@ border-bottom: solid 2px white;
   &:focus {
   outline: none;
   }
+  @media ${device.mobileS} {
+  width: 200px;
+  }
+  @media ${device.mobileM} {
+  width: 400px;
+  }
+  @media ${device.tablet} {
+  width: 600px;
+  }
+  @media ${device.laptop} { 
+  width: 1000px;
+  } ;
 `;
 
 const MailInput = styled.input`
@@ -105,6 +128,16 @@ border-bottom: solid 2px white;
 &:focus {
   outline: none;
   }
+  @media ${device.mobileS} {
+  width: 200px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} { 
+  width: 1000px;
+  } ;
 `;
 
 const Message = styled.textarea`
@@ -119,6 +152,16 @@ border-bottom: solid 2px white;
 &:focus {
   outline: none;
   }
+  @media ${device.mobileS} {
+  width: 200px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} { 
+  width: 1000px;
+  } ;
 `;
 
 const Submit = styled.button`
