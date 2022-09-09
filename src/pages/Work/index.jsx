@@ -161,14 +161,16 @@ const AppGrid = styled.div`
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   margin-top: 120px;
+  font-size: 0.60em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  }
+  @media ${device.laptop} {
+  
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   margin-top: 120px;
@@ -198,6 +200,8 @@ const App = styled.div`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
+  width: 233px;
+  height: 266px;
   }
   @media ${device.laptop} {
   width: 350px;
@@ -211,15 +215,7 @@ const AppImg = styled.img`
   ${App}:hover & {
     animation: ${zoom} 0.45s ease-Out;
   }
-  @media ${device.mobileS} {
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-  
-  } ;
+
 `;
 
 const AppName = styled.p`
@@ -230,11 +226,12 @@ const AppName = styled.p`
   border-radius: 15px;
   position: absolute;
   bottom: 0;
-  margin-bottom: 10px;
+  
   background-color: #474d5f;
   @media ${device.mobileS} {
-  width: 60px;
-  height: 20px;
+  width: 100px;
+  height: 30px;
+  margin-bottom: 0px;
   }
   @media ${device.mobileM} {
   }
@@ -243,6 +240,7 @@ const AppName = styled.p`
   @media ${device.laptop} {
   width: 150px;
   height: 50px;
+  margin-bottom: 10px;
   } ;
 `;
 
@@ -265,8 +263,17 @@ const Bg = styled.span`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
+  width: 160px;
+  height: 160px;
+  ${App}:hover & {
+    width: 226px;
+    height: 260px;
+  } ;
   }
   @media ${device.laptop} {
+  
+  } ;
+    @media ${device.laptopL} {
   width: 240px;
   height: 240px;
   ${App}:hover & {
