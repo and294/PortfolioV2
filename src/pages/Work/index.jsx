@@ -169,7 +169,7 @@ const AppGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
   
   grid-column-gap: 40px;
   grid-row-gap: 40px;
@@ -203,7 +203,7 @@ const App = styled.div`
   width: 233px;
   height: 266px;
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
   width: 350px;
   height: 400px;
   } ;
@@ -237,7 +237,7 @@ const AppName = styled.p`
   }
   @media ${device.tablet} {
   }
-  @media ${device.laptop} {
+  @media ${device.laptopL} {
   width: 150px;
   height: 50px;
   margin-bottom: 10px;
