@@ -38,6 +38,14 @@ const WorkSection = styled.section`
   padding: 70px;
   padding-top: 125px;
   padding-bottom: 125px;
+  @media ${device.mobileS} {
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  } ;
 `;
 
 const Title = styled.h1`
@@ -60,44 +68,87 @@ const Title = styled.h1`
 
 const Dot = styled.span`
   color: #4c6096;
-  font-size
-  @media ${device.mobileS} {
-    font-size: 29px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-   font-size: 35px;
-  } ;
+  font-size: 35px;
 `;
 
 const ProjectRight = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  @media ${device.mobileS} {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    flex-direction: row;
+  } ;
 `;
 
 const ProjectLeft = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media ${device.mobileS} {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    flex-direction: row;
+  } ;
 `;
 
-const StyledImg = styled.img`
-  width: 55%;
+const StyledImg = styled.img` 
   border-radius: 5px;
+  @media ${device.mobileS} {
+  width: 90%
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  width: 55%;
+  } ;
 `;
 
 const ProjectTitle = styled;
 
 const DescriptionRight = styled.div`
+  @media ${device.mobileS} {
+  text-align: center;
+  margin-top: 30px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
   margin-left: 150px;
+  } ;
 `;
 
 const DescriptionLeft = styled.div`
+  @media ${device.mobileS} {
+  text-align: center;
+  margin-top: 30px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
   margin-right: 150px;
+  } ;
 `;
 
 const AppGrid = styled.div`
