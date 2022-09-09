@@ -153,11 +153,26 @@ const DescriptionLeft = styled.div`
 
 const AppGrid = styled.div`
   display: grid;
+  
+  
+  @media ${device.mobileS} {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  margin-top: 120px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 40px;
   grid-row-gap: 40px;
   margin-top: 120px;
+  } ;
 `;
 
 const zoom = keyframes`
@@ -171,12 +186,23 @@ const App = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
-  height: 400px;
+  
   border-radius: 15px;
   border: solid 6px #474d5f;
   position: relative;
   transition: 0.75s;
+  @media ${device.mobileS} {
+  width: 140px;
+  height: 160px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  width: 350px;
+  height: 400px;
+  } ;
 `;
 
 const AppImg = styled.img`
@@ -185,11 +211,18 @@ const AppImg = styled.img`
   ${App}:hover & {
     animation: ${zoom} 0.45s ease-Out;
   }
+  @media ${device.mobileS} {
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  
+  } ;
 `;
 
 const AppName = styled.p`
-  width: 150px;
-  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,6 +232,18 @@ const AppName = styled.p`
   bottom: 0;
   margin-bottom: 10px;
   background-color: #474d5f;
+  @media ${device.mobileS} {
+  width: 60px;
+  height: 20px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  width: 150px;
+  height: 50px;
+  } ;
 `;
 
 const Bg = styled.span`
@@ -208,9 +253,26 @@ const Bg = styled.span`
   border-radius: 15px;
   background-color: #181818;
   transition: 0.2s ease-in;
+  
+  @media ${device.mobileS} {
+  width: 96px;
+  height: 96px;
+  ${App}:hover & {
+    width: 136px;
+    height: 156px;
+  } ;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+  width: 240px;
+  height: 240px;
   ${App}:hover & {
     width: 340px;
     height: 390px;
+  } ;
   } ;
 `;
 
@@ -229,7 +291,6 @@ export default function Work() {
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
             }
-            width="50%"
           />
           <DescriptionRight>
             <h3>Concept restaurant</h3>
