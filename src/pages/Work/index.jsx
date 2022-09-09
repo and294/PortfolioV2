@@ -8,6 +8,25 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 
+export const sizes = {
+  mobileS: "320px",
+  mobileM: "375px",
+  mobileL: "428px",
+  tablet: "768px",
+  laptop: "1024px",
+  laptopL: "1440px",
+  desktop: "2560px",
+};
+export const device = {
+  mobileS: `(min-width: ${sizes.mobileS})`,
+  mobileM: `(min-width: ${sizes.mobileM})`,
+  mobileL: `(min-width: ${sizes.mobileL})`,
+  tablet: `(min-width: ${sizes.tablet})`,
+  laptop: `(min-width: ${sizes.laptop})`,
+  laptopL: `(min-width: ${sizes.laptopL})`,
+  desktop: `(min-width: ${sizes.desktop})`,
+};
+
 const WorkSection = styled.section`
   background: #181818;
   color: white;
@@ -27,11 +46,31 @@ const Title = styled.h1`
   margin-bottom: 100px;
   display: flex;
   align-items: center;
+  @media ${device.mobileS} {
+    font-size: 12px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    font-size: 18px;
+  } ;
 `;
 
 const Dot = styled.span`
   color: #4c6096;
-  font-size: 35px;
+  font-size
+  @media ${device.mobileS} {
+    font-size: 29px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+   font-size: 35px;
+  } ;
 `;
 
 const ProjectRight = styled.div`

@@ -32,10 +32,10 @@ const AboutSection = styled.section`
   width: 100vw;
   display: flex;
   padding: 70px;
-  
+
   @media ${device.mobileS} {
     flex-direction: column;
-    padding-top: 100px
+    padding-top: 100px;
   }
   @media ${device.mobileM} {
   }
@@ -43,7 +43,7 @@ const AboutSection = styled.section`
     flex-direction: row;
   }
   @media ${device.laptop} {
-  padding-top: 125px;
+    padding-top: 125px;
   } ;
 `;
 
@@ -64,11 +64,20 @@ const Left = styled.div`
 `;
 
 const AboutMe = styled.h1`
-font-size: 18px;
-font-family: "GT america";
-margin-bottom: 25px;
-display: flex;
-align-items: center;
+  font-family: "GT america";
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  @media ${device.mobileS} {
+    font-size: 12px;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} {
+    font-size: 18px;
+  } ;
 `;
 
 const Right = styled.div`
@@ -79,16 +88,16 @@ const Right = styled.div`
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   @media ${device.mobileS} {
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
   } ;
 `;
 
@@ -99,21 +108,21 @@ const CircleOne = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 25px;
-  width: 25px;
+    height: 25px;
+    width: 25px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
   } ;
 `;
 const CircleTwo = styled.div`
   grid-area: 2 / 1 / 4 / 2;
-  background-color: #4c6096;  
+  background-color: #4c6096;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -121,18 +130,18 @@ const CircleTwo = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
-  font-size: 0.75em;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 170px;
-  width: 170px;
-  font-size: 1em;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleThree = styled.div`
@@ -146,18 +155,18 @@ const CircleThree = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
-  font-size: 0.75em;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 170px;
-  width: 170px;
-  font-size: 1em;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleFour = styled.div`
@@ -170,18 +179,18 @@ const CircleFour = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 100px;
-  width: 100px;
-  font-size: 0.75em;
+    height: 100px;
+    width: 100px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 170px;
-  width: 170px;
-  font-size: 1em;
+    height: 170px;
+    width: 170px;
+    font-size: 1em;
   } ;
 `;
 const CircleFive = styled.div`
@@ -194,16 +203,16 @@ const CircleFive = styled.div`
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
   @media ${device.mobileS} {
-  height: 25px;
-  width: 25px;
+    height: 25px;
+    width: 25px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  height: 50px;
-  width: 50px;
+    height: 50px;
+    width: 50px;
   } ;
 `;
 
@@ -212,8 +221,7 @@ export default function WelcomeBand() {
     <>
       <AboutSection>
         <Left>
-          <AboutMe
-          >
+          <AboutMe>
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
             &nbsp;ABOUT ME
           </AboutMe>
