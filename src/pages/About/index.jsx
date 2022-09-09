@@ -64,20 +64,12 @@ const Left = styled.div`
 `;
 
 const AboutMe = styled.h1`
+font-size: 18px;
   font-family: "GT america";
   margin-bottom: 25px;
   display: flex;
   align-items: center;
-  @media ${device.mobileS} {
-    font-size: 12px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-    font-size: 18px;
-  } ;
+  
 `;
 
 const Right = styled.div`

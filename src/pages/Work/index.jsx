@@ -54,16 +54,6 @@ const Title = styled.h1`
   margin-bottom: 100px;
   display: flex;
   align-items: center;
-  @media ${device.mobileS} {
-    font-size: 12px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-    font-size: 18px;
-  } ;
 `;
 
 const Dot = styled.span`
@@ -110,7 +100,7 @@ const ProjectLeft = styled.div`
 const StyledImg = styled.img` 
   border-radius: 5px;
   @media ${device.mobileS} {
-  width: 90%
+  width: 95%
   }
   @media ${device.mobileM} {
   }

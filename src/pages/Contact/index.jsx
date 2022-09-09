@@ -35,132 +35,133 @@ const ContactSection = styled.section`
   padding-top: 125px;
   font-family: "GT america";
   @media ${device.mobileS} {
-  flex-direction: column;
-  align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
-  @media ${device.laptopL} { 
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  @media ${device.laptopL} {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
   } ;
 `;
 
-const Left = styled.div`
-
-`;
+const Left = styled.div``;
 
 const Title = styled.h1`
-font-size: 3.5em;
-margin-bottom: 100px;
+  font-size: 3.5em;
+  margin-bottom: 100px;
 `;
 
 const Mail = styled.p`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 `;
 
 const Phone = styled.p`
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 `;
 
 const MailImg = styled.img`
-width: 25%;
-margin-right: 20px;
+  width: 25%;
+  margin-right: 20px;
 `;
 
 const PhoneImg = styled.img`
-width: 23%;
-margin-right: 15px;
+  width: 23%;
+  margin-right: 15px;
 `;
 
 const Right = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
   @media ${device.mobileS} {
-  align-items: center;
+    align-items: center;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
-  @media ${device.laptop} { 
+  @media ${device.laptop} {
   } ;
 `;
 
 const Name = styled.input`
-
-font-size: 1.5em;
-color: white;
-background-color: #181818;
-margin-bottom: 50px;
-border: none;
-border-bottom: solid 2px white;
+  font-size: 1.5em;
+  color: white;
+  background-color: #181818;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: solid 2px white;
   &:focus {
-  outline: none;
+    outline: none;
   }
   @media ${device.mobileS} {
-  width: 200px;
+    width: 200px;
   }
   @media ${device.mobileM} {
-  width: 400px;
+    width: 300px;
   }
   @media ${device.tablet} {
-  width: 600px;
+    width: 600px;
   }
-  @media ${device.laptop} { 
-  width: 1000px;
+  @media ${device.laptop} {
+    width: 1000px;
   } ;
 `;
 
 const MailInput = styled.input`
-width: 1000px;
-font-size: 1.5em;
-color: white;
-background-color: #181818;
-margin-bottom: 50px;
-border: none;
-border-bottom: solid 2px white;
-&:focus {
-  outline: none;
+  width: 1000px;
+  font-size: 1.5em;
+  color: white;
+  background-color: #181818;
+  margin-bottom: 50px;
+  border: none;
+  border-bottom: solid 2px white;
+  &:focus {
+    outline: none;
   }
   @media ${device.mobileS} {
-  width: 200px;
+    width: 200px;
   }
   @media ${device.mobileM} {
+    width: 300px;
   }
   @media ${device.tablet} {
+    width: 600px;
   }
-  @media ${device.laptop} { 
-  width: 1000px;
+  @media ${device.laptop} {
+    width: 1000px;
   } ;
 `;
 
 const Message = styled.textarea`
-width: 1000px;
-font-size: 1.5em;
-height: 300px;
-tex-align: top;
-color: white;
-background-color: #181818;
-border: none;
-border-bottom: solid 2px white;
-&:focus {
-  outline: none;
+  width: 1000px;
+  font-size: 1.5em;
+  height: 300px;
+  tex-align: top;
+  color: white;
+  background-color: #181818;
+  border: none;
+  border-bottom: solid 2px white;
+  &:focus {
+    outline: none;
   }
   @media ${device.mobileS} {
-  width: 200px;
+    width: 200px;
   }
   @media ${device.mobileM} {
+    width: 300px;
   }
   @media ${device.tablet} {
+    width: 600px;
   }
-  @media ${device.laptop} { 
-  width: 1000px;
+  @media ${device.laptop} {
+    width: 1000px;
   } ;
 `;
 
@@ -176,18 +177,31 @@ const Submit = styled.button`
   align-self: flex-end;
 `;
 
-
 export default function Contact() {
   return (
     <>
       <ContactSection>
         <Left>
           <Title>Contact Me</Title>
-          <Mail><MailImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mail.svg?v=1662546414864"}/>and29ferraro@gmail.com</Mail>
-          <Phone><PhoneImg src={"https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/phone%20bg.svg?v=1662546558035"}/>+33 6 87 80 22 06</Phone>
+          <Mail>
+            <MailImg
+              src={
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mail.svg?v=1662546414864"
+              }
+            />
+            and29ferraro@gmail.com
+          </Mail>
+          <Phone>
+            <PhoneImg
+              src={
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/phone%20bg.svg?v=1662546558035"
+              }
+            />
+            +33 6 87 80 22 06
+          </Phone>
         </Left>
         <Right>
-         <Name type="text" placeholder="Full Name"></Name>
+          <Name type="text" placeholder="Full Name"></Name>
           <MailInput type="text" placeholder="Email"></MailInput>
           <Message type="text" placeholder="Message"></Message>
           <Submit>Submit</Submit>
