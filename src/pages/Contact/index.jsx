@@ -31,10 +31,20 @@ const ContactSection = styled.section`
   color: white;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
   padding: 70px;
   padding-top: 125px;
   font-family: "GT america";
+  @media ${device.mobileS} {
+  flex-direction: column;
+  
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  }
+  @media ${device.laptop} { 
+  justify-content: space-between;
+  } ;
 `;
 
 const Left = styled.div`
