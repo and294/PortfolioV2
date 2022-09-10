@@ -215,6 +215,22 @@ const Scroll = styled.p`
 `;
 
 export default function Home() {
+  
+      const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Andrea%20Ferraro%20D%C3%A9veloppeur%20Frontend%20(2).pdf?v=1662819466820').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Andrea%20Ferraro%20D%C3%A9veloppeur%20Frontend%20(2).pdf?v=1662819466820';
+                alink.click();
+            })
+        })
+    }
+  
   return (
     <>
       <Landing>
@@ -226,7 +242,7 @@ export default function Home() {
           <Paris><i>Paris, France</i></Paris>
           <Circle></Circle>
         </NameSection>
-        <Resume>Resume</Resume>
+        <Resume onClick={onButtonClick}>Resume</Resume>
         <Scroll>Scroll</Scroll>
       </Landing>
     </>
