@@ -29,7 +29,7 @@ export const device = {
 
 
 const ToolboxSection = styled.section`
-  background: #181818;
+  background: #1c1c1c;
   color: white;
   font-family: "GT america";
   width: 100vw;
@@ -37,8 +37,8 @@ const ToolboxSection = styled.section`
   flex-direction: column;
   align-items: center;
   @media ${device.mobileS} {
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
   }
   @media ${device.mobileM} {
   }

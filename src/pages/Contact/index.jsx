@@ -41,8 +41,9 @@ const ContactSection = styled.section`
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
+  
   }
-  @media ${device.laptopL} {
+  @media ${device.laptop} {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -110,7 +111,7 @@ const Name = styled.input`
     width: 600px;
   }
   @media ${device.laptop} {
-    width: 1000px;
+    width: 900px;
   } ;
 `;
 
@@ -135,7 +136,7 @@ const MailInput = styled.input`
     width: 600px;
   }
   @media ${device.laptop} {
-    width: 1000px;
+    width: 80%;
   } ;
 `;
 
@@ -161,7 +162,7 @@ const Message = styled.textarea`
     width: 600px;
   }
   @media ${device.laptop} {
-    width: 1000px;
+    width: 900px;
   } ;
 `;
 

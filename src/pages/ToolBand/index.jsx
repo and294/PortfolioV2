@@ -27,7 +27,7 @@ export const device = {
 };
 
 const ToolStrip = styled.section`
-  background: #181818;
+  background: #1c1c1c;
   color: #eee;
   font-family: "SaintMonica";
   font-size: 2.5em;

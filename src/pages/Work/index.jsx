@@ -91,7 +91,9 @@ const StyledImg = styled.img`
   } ;
 `;
 
-const ProjectTitle = styled;
+const ProjectTitle = styled.h3`
+color: #344268;
+`;
 
 const Description = styled.div`
 padding: 5px;
@@ -200,6 +202,7 @@ const AppName = styled.p`
   bottom: 0;
   }
   @media ${device.mobileM} {
+  margin-bottom: 5px;
   }
   @media ${device.tablet} {
   margin-bottom: 10px;
@@ -266,7 +269,7 @@ export default function Work() {
             }
           />
           <Description>
-            <h3>Concept restaurant</h3>
+            <ProjectTitle>Concept restaurant</ProjectTitle>
             <p
               style={{
                 fontSize: "0.85em",
@@ -289,7 +292,7 @@ export default function Work() {
 
         <Project style={{ marginTop: "200px" }}>
           <Description>
-            <h3>Freelance agency</h3>
+            <ProjectTitle>Freelance agency</ProjectTitle>
             <p
               style={{
                 fontSize: "0.85em",
@@ -324,7 +327,7 @@ export default function Work() {
             width="50%"
           />
           <Description>
-            <h3>Tudor BlackBay 58 redesign</h3>
+            <ProjectTitle>Tudor BlackBay 58 redesign</ProjectTitle>
             <p
               style={{
                 fontSize: "0.85em",
