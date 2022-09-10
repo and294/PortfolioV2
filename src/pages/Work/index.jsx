@@ -38,14 +38,6 @@ const WorkSection = styled.section`
   padding: 70px;
   padding-top: 125px;
   padding-bottom: 125px;
-  @media ${device.mobileS} {
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-  } ;
 `;
 
 const Title = styled.h1`
@@ -62,9 +54,11 @@ const Dot = styled.span`
 `;
 
 const ProjectRight = styled.div`
+position: relative;
+width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   @media ${device.mobileS} {
     flex-direction: column;
     justify-content: center;
@@ -75,7 +69,7 @@ const ProjectRight = styled.div`
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-    flex-direction: row;
+    
   } ;
 `;
 
@@ -100,7 +94,7 @@ const ProjectLeft = styled.div`
 const StyledImg = styled.img` 
   border-radius: 5px;
   @media ${device.mobileS} {
-  width: 95%
+  width: 100%
   }
   @media ${device.mobileM} {
   }
@@ -114,7 +108,8 @@ const StyledImg = styled.img`
 const ProjectTitle = styled;
 
 const DescriptionRight = styled.div`
-
+position: absolute;
+bottom: -110px;
 background: rgba(255, 255, 255, 0.25);
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -130,7 +125,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  margin-left: 150px;
+  
   } ;
 `;
 
@@ -295,7 +290,7 @@ export default function Work() {
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
             }
-          /></StyledImg>
+          />
           <DescriptionRight>
             <h3>Concept restaurant</h3>
             <p
@@ -322,7 +317,7 @@ export default function Work() {
             <h3>Freelance agency</h3>
             <p
               style={{
-                width: "300px",
+                width: "200px",
                 borderTop: "solid 1px white",
                 borderBottom: "solid 1px white",
                 margin: "20px 0px 20px 0px",
