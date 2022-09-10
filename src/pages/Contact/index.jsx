@@ -27,7 +27,7 @@ export const device = {
 };
 
 const ContactSection = styled.section`
-  background: #181818;
+  background: #1c1c1c;
   color: white;
   width: 100vw;
   display: flex;
@@ -106,7 +106,7 @@ const Right = styled.div`
 const Name = styled.input`
   font-size: 1.5em;
   color: white;
-  background-color: #181818;
+  background-color: #1c1c1c;
   margin-bottom: 50px;
   border: none;
   border-bottom: solid 2px white;
@@ -131,7 +131,7 @@ const MailInput = styled.input`
   width: 1000px;
   font-size: 1.5em;
   color: white;
-  background-color: #181818;
+  background-color: #1c1c1c;
   margin-bottom: 50px;
   border: none;
   border-bottom: solid 2px white;
@@ -157,7 +157,7 @@ const Message = styled.textarea`
   font-size: 1.5em;
   tex-align: top;
   color: white;
-  background-color: #181818;
+  background-color: #1c1c1c;
   border: none;
   border-bottom: solid 2px white;
   &:focus {
@@ -199,7 +199,7 @@ const Submit = styled.button`
 export default function Contact() {
   return (
     <>
-      <ContactSection>
+      <ContactSection id="contact">
         <Left>
           <Title>Contact Me</Title>
           <Mail>

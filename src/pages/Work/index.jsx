@@ -80,7 +80,7 @@ const StyledImg = styled.img`
     -0.1px 11.7px 17.6px hsl(0deg 0% 1% / 0.7);
   border-radius: 5px;
   @media ${device.mobileS} {
-    width: 100%;
+    width: 90%;
   }
   @media ${device.mobileM} {
   }
@@ -93,11 +93,21 @@ const StyledImg = styled.img`
 
 const ProjectTitle = styled.h3`
 color: #344268;
+@media ${device.mobileS} {
+font-size: 1em;
+  }
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  font-size: 1.25em;
+  }
+  @media ${device.laptop} {
+  } ;
 `;
 
 const Description = styled.div`
+color: white;
 padding: 5px;
-
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -112,7 +122,8 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   @media ${device.mobileS} {
   text-align: center;
   margin-top: 30px;
-  width: 200px
+  width: 200px;
+  font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
@@ -120,6 +131,7 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   }
   @media ${device.laptop} {
   width: 300px;
+  font-size: 0.85em;
   } ;
 `;
 
@@ -130,7 +142,7 @@ const AppGrid = styled.div`
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
-    margin-top: 120px;
+    margin-top: 200px;
     font-size: 0.6em;
   }
   @media ${device.mobileM} {
@@ -278,7 +290,7 @@ export default function Work() {
                 borderTop: "1px solid rgba(255, 255, 255, 0.79)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
                 margin: "20px 0px 10px 0px",
-                padding: "20px 0px 20px 0px",
+                padding: "15px 0px 15px 0px",
               }}
             >
               Personnal project
@@ -296,7 +308,7 @@ export default function Work() {
             <ProjectTitle>Freelance agency</ProjectTitle>
             <p
               style={{
-                fontSize: "0.85em",
+                
                 width: "200px",
                 borderTop: "1px solid rgba(255, 255, 255, 0.79)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.79)",

@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styled from "styled-components";
 
 const FooterSection = styled.section`
-  background: #181818;
+  background: #1c1c1c;
   color: white;
   width: 100vw;
   display: flex;
