@@ -37,6 +37,14 @@ const WelcomeStrip = styled.section`
   @media ${device.mobileS} {
   font-size: 1.5em;
   padding: 20px 0;
+  box-shadow: inset 0px 0.5px 0.5px hsl(224deg 35% 18% / 0.85),
+    inset -0.1px 1.3px 1.2px hsl(224deg 35% 18% / 0.7),
+    inset -0.2px 4.4px 4px -2.6px hsl(224deg 35% 18% / 0.55),
+    inset -0.6px 12.1px 11.1px -3.9px hsl(224deg 35% 18% / 0.39),
+    inset 0px -0.5px 0.5px hsl(224deg 35% 18% / 0.85),
+    inset 0px -1.3px 1.2px -1.3px hsl(224deg 35% 18% / 0.7),
+    inset 0px -4.3px 3.9px -2.6px hsl(224deg 35% 18% / 0.55),
+    inset 0.1px -11.9px 10.9px -3.9px hsl(224deg 35% 18% / 0.39);
   }
   @media ${device.mobileM} {
   }

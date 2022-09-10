@@ -114,6 +114,13 @@ const StyledImg = styled.img`
 const ProjectTitle = styled;
 
 const DescriptionRight = styled.div`
+
+background: rgba(255, 255, 255, 0.25);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
+border: 1px solid rgba(255, 255, 255, 0.09);
   @media ${device.mobileS} {
   text-align: center;
   margin-top: 30px;
@@ -288,7 +295,7 @@ export default function Work() {
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
             }
-          />
+          /></StyledImg>
           <DescriptionRight>
             <h3>Concept restaurant</h3>
             <p

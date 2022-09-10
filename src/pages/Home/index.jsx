@@ -165,7 +165,7 @@ const Resume = styled.button`
   box-shadow: inset 0px 0px 0px hsl(224deg 35% 18% / 0.85),
     inset 0px 0px 0px -1.3px hsl(224deg 35% 18% / 0.7),
     inset 0px -0.1px 0.1px -2.6px hsl(224deg 35% 18% / 0.55),
-    inset 0.1px -0.2px 0.2px -3.9px hsl(224deg 35% 18% / 0.39);
+    inset 0.2px 9.4px 8.6px -3.9px hsl(224deg 35% 18% / 0.39);
   @media ${device.mobileS} {
     font-size: 0.75em;
     margin: 20px;

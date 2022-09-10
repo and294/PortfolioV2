@@ -103,7 +103,7 @@ const CircleOne = styled.div`
   background-color: #4c6096;
   border-radius: 100%;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
-  box-shadow: 0px 0px 21px 10px #4c6096;
+  box-shadow: 0px 0px 21px 7px #4c6096;
   @media ${device.mobileS} {
     height: 25px;
     width: 25px;
@@ -124,8 +124,8 @@ const CircleTwo = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
-  box-shadow: 0px 0px 21px 10px #4c6096;
+  -webkit-box-shadow: 0px 0px 21px 7px #4c6096;
+  box-shadow: 0px 0px 21px 7px #4c6096;
   @media ${device.mobileS} {
     height: 100px;
     width: 100px;
@@ -149,8 +149,8 @@ const CircleThree = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
-  box-shadow: 0px 0px 21px 10px #4c6096;
+  -webkit-box-shadow: 0px 0px 21px 7px #4c6096;
+  box-shadow: 0px 0px 21px 7px #4c6096;
   @media ${device.mobileS} {
     height: 100px;
     width: 100px;
@@ -173,8 +173,8 @@ const CircleFour = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
-  box-shadow: 0px 0px 21px 10px #4c6096;
+  -webkit-box-shadow: 0px 0px 21px 7px #4c6096;
+  box-shadow: 0px 0px 21px 7px #4c6096;
   @media ${device.mobileS} {
     height: 100px;
     width: 100px;
@@ -197,8 +197,8 @@ const CircleFive = styled.div`
   width: 50px;
   border-radius: 100%;
   margin-left: 25px;
-  -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
-  box-shadow: 0px 0px 21px 10px #4c6096;
+  -webkit-box-shadow: 0px 0px 21px 7px #4c6096;
+  box-shadow: 0px 0px 21px 7px #4c6096;
   @media ${device.mobileS} {
     height: 25px;
     width: 25px;
