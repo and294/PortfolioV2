@@ -53,7 +53,8 @@ const Dot = styled.span`
   font-size: 35px;
 `;
 
-const ProjectRight = styled.div`
+const Project = styled.div`
+color: #4c6096;
 position: relative;
 width: 100vw;
   display: flex;
@@ -92,6 +93,14 @@ const ProjectLeft = styled.div`
 `;
 
 const StyledImg = styled.img` 
+box-shadow: 0px 0.1px 0.2px hsl(0deg 0% 0% / 0),
+    0px 1.3px 2px hsl(0deg 0% 0% / 0.13),
+    -0.1px 2.4px 3.6px hsl(0deg 0% 0% / 0.25),
+    -0.1px 3.6px 5.4px hsl(0deg 0% 0% / 0.38),
+    -0.2px 5px 7.5px hsl(0deg 0% 0% / 0.51),
+    -0.3px 7px 10.5px hsl(0deg 0% 0% / 0.63),
+    -0.4px 9.7px 14.6px hsl(0deg 0% 0% / 0.76),
+    -0.5px 13.4px 20.1px hsl(0deg 0% 0% / 0.89);
   border-radius: 5px;
   @media ${device.mobileS} {
   width: 100%
@@ -107,7 +116,7 @@ const StyledImg = styled.img`
 
 const ProjectTitle = styled;
 
-const DescriptionRight = styled.div`
+const Description = styled.div`
 width: 300px;
 display: flex;
 flex-direction: column;
@@ -289,13 +298,13 @@ export default function Work() {
           <Dot>&#x2022;</Dot>
         </Title>
 
-        <ProjectRight>
+        <Project>
           <StyledImg
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
             }
           />
-          <DescriptionRight>
+          <Description>
             <h3>Concept restaurant</h3>
             <p
               style={{
@@ -314,18 +323,19 @@ export default function Work() {
               <br />
               Javascript Gsap
             </p>
-          </DescriptionRight>
-        </ProjectRight>
+          </Description>
+        </Project>
 
-        <ProjectLeft style={{ marginTop: "100px" }}>
-          <DescriptionLeft>
+        <Project style={{ marginTop: "200px" }}>
+          <Description>
             <h3>Freelance agency</h3>
             <p
               style={{
-                width: "100px",
+                fontSize: "0.85em",
+                width: "200px",
                 borderTop: "1px solid rgba(255, 255, 255, 0.79)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
-                margin: "20px 0px 20px 0px",
+                margin: "20px 0px 10px 0px",
                 padding: "20px 0px 20px 0px",
               }}
             >
@@ -336,38 +346,39 @@ export default function Work() {
               <br />
               ReactJS Gsap
             </p>
-          </DescriptionLeft>
+          </Description>
           <StyledImg
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
             }
             width="50%"
           />
-        </ProjectLeft>
+        </Project>
 
-        <ProjectRight style={{ marginTop: "100px" }}>
+        <Project style={{ marginTop: "200px" }}>
           <StyledImg
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%201BB58%20landing.png?v=1662371147279"
             }
             width="50%"
           />
-          <DescriptionRight>
+          <Description>
             <h3>Tudor BlackBay 58 redesign</h3>
             <p
               style={{
-                width: "300px",
-                borderTop: "solid 1px white",
-                borderBottom: "solid 1px white",
-                margin: "20px 0px 20px 0px",
+                fontSize: "0.85em",
+                width: "200px",
+                borderTop: "1px solid rgba(255, 255, 255, 0.79)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
+                margin: "20px 0px 10px 0px",
                 padding: "20px 0px 20px 0px",
               }}
             >
               Personnal project
             </p>
             <p>Figma</p>
-          </DescriptionRight>
-        </ProjectRight>
+          </Description>
+        </Project>
 
         <AppGrid>
           <App>
