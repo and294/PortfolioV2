@@ -50,7 +50,18 @@ const ContactSection = styled.section`
   } ;
 `;
 
-const Left = styled.div``;
+const Left = styled.div`
+  @media ${device.mobileS} {
+  margin-bottom: 50px; 
+  @media ${device.mobileM} {
+  }
+  @media ${device.tablet} {
+  
+  }
+  @media ${device.laptop} {
+    margin-bottom: 0;
+  } ;
+`;
 
 const Title = styled.h1`
   font-size: 3.5em;
@@ -74,7 +85,8 @@ const MailImg = styled.img`
 
 const PhoneImg = styled.img`
   width: 23%;
-  margin-right: 15px;
+  margin-right: 25px;
+  margin-top: 10px;
 `;
 
 const Right = styled.div`
@@ -102,16 +114,16 @@ const Name = styled.input`
     outline: none;
   }
   @media ${device.mobileS} {
-    width: 200px;
+    width: 100%;
   }
   @media ${device.mobileM} {
-    width: 300px;
+    
   }
   @media ${device.tablet} {
-    width: 600px;
+    
   }
   @media ${device.laptop} {
-    width: 900px;
+    width: 500px;
   } ;
 `;
 
@@ -127,23 +139,22 @@ const MailInput = styled.input`
     outline: none;
   }
   @media ${device.mobileS} {
-    width: 200px;
+    width: 100%;
   }
   @media ${device.mobileM} {
-    width: 300px;
+    
   }
   @media ${device.tablet} {
-    width: 600px;
+    
   }
   @media ${device.laptop} {
-    width: 80%;
+    width: 500px;
   } ;
 `;
 
 const Message = styled.textarea`
   width: 1000px;
   font-size: 1.5em;
-  height: 300px;
   tex-align: top;
   color: white;
   background-color: #181818;
@@ -153,16 +164,18 @@ const Message = styled.textarea`
     outline: none;
   }
   @media ${device.mobileS} {
-    width: 200px;
+    width: 100%;
+    height: 150px;
   }
   @media ${device.mobileM} {
-    width: 300px;
+    
   }
   @media ${device.tablet} {
-    width: 600px;
+    
   }
   @media ${device.laptop} {
-    width: 900px;
+    width: 500px;
+    height: 300px;
   } ;
 `;
 
@@ -176,6 +189,11 @@ const Submit = styled.button`
   border-radius: 25px;
   margin: 50px;
   align-self: flex-end;
+  box-shadow: inset 0px 0px 0px hsl(224deg 35% 18% / 0.85),
+    inset 0px 0px 0px -1.3px hsl(224deg 35% 18% / 0.7),
+    inset 0px -0.1px 0.1px -2.6px hsl(224deg 35% 18% / 0.55),
+    inset 0.2px 9.4px 8.6px -3.9px hsl(224deg 35% 18% / 0.39);
+  cursor: pointer;
 `;
 
 export default function Contact() {

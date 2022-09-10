@@ -1,5 +1,5 @@
 import React from "react";
-
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import WelcomeBand from "/src/pages/WelcomeBand";
 import About from "/src/pages/About";
@@ -14,6 +14,7 @@ import "./styles/styles.css";
 export default function App() {
   return (
     <>
+      <Router></Router>
       <Home />
       <WelcomeBand />
       <About />

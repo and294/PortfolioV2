@@ -172,6 +172,7 @@ const Resume = styled.button`
     width: 75px;
     height: 40px;
     border-radius: 20px;
+    cursor: pointer;
   }
   @media ${device.mobileM} {
   }

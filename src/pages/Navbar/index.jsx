@@ -46,9 +46,9 @@ const NavLink = styled(Link)`
 export default function Navbar() {
   return (
     <Nav>
-      <a style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px"}}>About</a>
-      <a style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px"}}>Work</a>
-      <a style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px"}}>Contact</a>
+      <a to="" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>About</a>
+      <a style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>Work</a>
+      <a style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>Contact</a>
     </Nav>
   );
 }
