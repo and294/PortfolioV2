@@ -108,6 +108,8 @@ const StyledImg = styled.img`
 const ProjectTitle = styled;
 
 const DescriptionRight = styled.div`
+width: 300px;
+text-align: center;
 position: absolute;
 bottom: -110px;
 background: rgba(255, 255, 255, 0.25);
@@ -295,7 +297,7 @@ export default function Work() {
             <h3>Concept restaurant</h3>
             <p
               style={{
-                width: "300px",
+                width: "200px",
                 borderTop: "solid 1px white",
                 borderBottom: "solid 1px white",
                 margin: "20px 0px 20px 0px",
@@ -317,7 +319,7 @@ export default function Work() {
             <h3>Freelance agency</h3>
             <p
               style={{
-                width: "200px",
+                width: "100px",
                 borderTop: "solid 1px white",
                 borderBottom: "solid 1px white",
                 margin: "20px 0px 20px 0px",
