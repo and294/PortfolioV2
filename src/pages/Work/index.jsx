@@ -28,7 +28,7 @@ export const device = {
 };
 
 const WorkSection = styled.section`
-  background: #1C1C1C;
+  background: #1c1c1c;
   color: white;
   font-family: "GT america";
   width: 100vw;
@@ -54,9 +54,9 @@ const Dot = styled.span`
 `;
 
 const Project = styled.div`
-color: #4c6096;
-position: relative;
-width: 100vw;
+  color: #4c6096;
+  position: relative;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,44 +70,24 @@ width: 100vw;
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-    
   } ;
 `;
 
-const ProjectLeft = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  @media ${device.mobileS} {
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-    flex-direction: row;
-  } ;
-`;
-
-const StyledImg = styled.img` 
-box-shadow: 0px 0.5px 0.8px hsl(0deg 0% 1% / 0),
-    0px 2.2px 3.3px hsl(0deg 0% 1% / 0.18),
-    0px 4px 6px hsl(0deg 0% 1% / 0.35),
+const StyledImg = styled.img`
+  box-shadow: 0px 0.5px 0.8px hsl(0deg 0% 1% / 0),
+    0px 2.2px 3.3px hsl(0deg 0% 1% / 0.18), 0px 4px 6px hsl(0deg 0% 1% / 0.35),
     0px 6.8px 10.2px hsl(0deg 0% 1% / 0.52),
     -0.1px 11.7px 17.6px hsl(0deg 0% 1% / 0.7);
   border-radius: 5px;
   @media ${device.mobileS} {
-  width: 100%
+    width: 100%;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  width: 75%;
+    width: 75%;
   } ;
 `;
 
@@ -115,7 +95,7 @@ const ProjectTitle = styled;
 
 const Description = styled.div`
 padding: 5px;
-width: th: 300px;
+width: 300px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -140,43 +120,26 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   } ;
 `;
 
-const DescriptionLeft = styled.div`
-  @media ${device.mobileS} {
-  text-align: center;
-  margin-top: 30px;
-  }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
-  }
-  @media ${device.laptop} {
-  margin-right: 150px;
-  } ;
-`;
-
 const AppGrid = styled.div`
   display: grid;
-  
-  
   @media ${device.mobileS} {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin-top: 120px;
-  font-size: 0.60em;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 120px;
+    font-size: 0.6em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 210px;
   }
   @media ${device.laptopL} {
-  
-  grid-column-gap: 40px;
-  grid-row-gap: 40px;
-  margin-top: 120px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
   } ;
 `;
 
@@ -188,31 +151,34 @@ const zoom = keyframes`
 
 const App = styled.div`
   background: rgba(71, 77, 95, 0.61);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.7px);
--webkit-backdrop-filter: blur(6.7px);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1), 0px 0.5px 0.8px hsl(0deg 0% 1% / 0),
+    0px 2.2px 3.3px hsl(0deg 0% 1% / 0.18), 0px 4px 6px hsl(0deg 0% 1% / 0.35),
+    0px 6.8px 10.2px hsl(0deg 0% 1% / 0.52),
+    -0.1px 11.7px 17.6px hsl(0deg 0% 1% / 0.7);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   border-radius: 15px;
   border: blur(6.7px) 6px #474d5f;
   position: relative;
   transition: 0.75s;
   @media ${device.mobileS} {
-  width: 140px;
-  height: 160px;
+    width: 140px;
+    height: 160px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  width: 233px;
-  height: 266px;
+    width: 233px;
+    height: 266px;
   }
   @media ${device.laptopL} {
-  width: 350px;
-  height: 400px;
+    width: 350px;
+    height: 400px;
   } ;
 `;
 
@@ -222,7 +188,6 @@ const AppImg = styled.img`
   ${App}:hover & {
     animation: ${zoom} 0.45s ease-Out;
   }
-
 `;
 
 const AppName = styled.p`
@@ -233,21 +198,16 @@ const AppName = styled.p`
   border-radius: 15px;
   position: absolute;
   bottom: 0;
-  
-  background-color: #474d5f;
-  @media ${device.mobileS} {
-  width: 100px;
-  height: 30px;
-  margin-bottom: 0px;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
+  margin-bottom: 10px;
   }
   @media ${device.laptopL} {
-  width: 150px;
-  height: 50px;
-  margin-bottom: 10px;
+    width: 150px;
+    height: 50px;
+    
   } ;
 `;
 
@@ -258,35 +218,34 @@ const Bg = styled.span`
   border-radius: 15px;
   background-color: #181818;
   transition: 0.2s ease-in;
-  
+
   @media ${device.mobileS} {
-  width: 96px;
-  height: 96px;
-  ${App}:hover & {
-    width: 136px;
-    height: 156px;
-  } ;
+    width: 96px;
+    height: 96px;
+    ${App}:hover & {
+      width: 136px;
+      height: 156px;
+    }
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  width: 160px;
-  height: 160px;
-  ${App}:hover & {
-    width: 226px;
-    height: 260px;
-  } ;
+    width: 160px;
+    height: 160px;
+    ${App}:hover & {
+      width: 226px;
+      height: 260px;
+    }
   }
   @media ${device.laptop} {
-  
-  } ;
-    @media ${device.laptopL} {
-  width: 240px;
-  height: 240px;
-  ${App}:hover & {
-    width: 340px;
-    height: 390px;
-  } ;
+  }
+  @media ${device.laptopL} {
+    width: 240px;
+    height: 240px;
+    ${App}:hover & {
+      width: 340px;
+      height: 390px;
+    }
   } ;
 `;
 
@@ -320,7 +279,7 @@ export default function Work() {
             >
               Personnal project
             </p>
-            <p style={{fontSize: "0.85em"}}>
+            <p style={{ fontSize: "0.85em" }}>
               HTML CSS
               <br />
               Javascript Gsap
