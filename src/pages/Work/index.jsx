@@ -97,7 +97,7 @@ color: #344268;
 
 const Description = styled.div`
 padding: 5px;
-width: 300px;
+
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -112,13 +112,14 @@ border: 1px solid rgba(255, 255, 255, 0.09);
   @media ${device.mobileS} {
   text-align: center;
   margin-top: 30px;
+  width: 200px
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  
+  width: 300px;
   } ;
 `;
 
@@ -255,7 +256,7 @@ const Bg = styled.span`
 export default function Work() {
   return (
     <>
-      <WorkSection>
+      <WorkSection id="work">
         <Title>
           <Dot>&#x2022;</Dot>
           &nbsp;WORK&nbsp;

@@ -14,7 +14,6 @@ import "./styles/styles.css";
 export default function App() {
   return (
     <>
-      <Router></Router>
       <Home />
       <WelcomeBand />
       <About />

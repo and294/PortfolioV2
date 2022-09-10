@@ -25,6 +25,26 @@ video {
   max-width: 100%;
 }
 
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #4c6096;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "SaintMonica";
   src: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/SaintMonicaRegular.otf?v=1662029025148"),

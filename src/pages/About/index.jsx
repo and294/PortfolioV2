@@ -216,7 +216,7 @@ const CircleFive = styled.div`
 export default function WelcomeBand() {
   return (
     <>
-      <AboutSection>
+      <AboutSection id="about">
         <Left>
           <AboutMe>
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
