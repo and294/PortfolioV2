@@ -112,7 +112,7 @@ const Line = styled.span`
 
 const Paris = styled.p`
   z-index: 10;
-  font-family: "GT america";
+  font-family: Plantin;
   @media ${device.mobileS} {
     font-size: 10px;
   }
@@ -218,11 +218,7 @@ export default function Home() {
           <Name>ANDREA FERRARO</Name>
           <Frontend>Frontend Developer</Frontend>
           <Line></Line>
-          <Paris
-            style={{ fontSize: "14px", zIndex: "10", fontFamily: "GT america" }}
-          >
-            Paris, France
-          </Paris>
+          <Paris><i>Paris, France</i></Paris>
           <Circle></Circle>
         </NameSection>
         <Resume>Resume</Resume>

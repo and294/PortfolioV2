@@ -31,11 +31,12 @@ const AboutSection = styled.section`
   color: white;
   width: 100vw;
   display: flex;
-  padding: 70px;
 
   @media ${device.mobileS} {
     flex-direction: column;
     padding-top: 100px;
+    padding-right: 70px;
+    padding-left: 10px;
   }
   @media ${device.mobileM} {
   }
@@ -44,6 +45,7 @@ const AboutSection = styled.section`
   }
   @media ${device.laptop} {
     padding-top: 125px;
+    padding: 70px;
   } ;
 `;
 
@@ -51,6 +53,7 @@ const Left = styled.div`
   font-family: Plantin;
 
   @media ${device.mobileS} {
+  font-size: 28px;
   }
   @media ${device.mobileM} {
   }
@@ -59,7 +62,7 @@ const Left = styled.div`
   @media ${device.laptop} {
     width: 50%;
     margin-right: 250px;
-    font-size: 28px;
+    font-size: 32px;
   } ;
 `;
 
@@ -82,6 +85,8 @@ const Right = styled.div`
   @media ${device.mobileS} {
     grid-column-gap: 5px;
     grid-row-gap: 10px;
+    margin-right: 0;
+    margin-left: auto;
   }
   @media ${device.mobileM} {
   }
@@ -218,7 +223,7 @@ export default function WelcomeBand() {
             &nbsp;ABOUT ME
           </AboutMe>
           <p style={{ lineHeight: "1.1" }}>
-            I am a{" "}
+            Hi, I'm a{" "}
             <span style={{ color: "#4c6096" }}>
               self thaught front-end developer
             </span>{" "}
