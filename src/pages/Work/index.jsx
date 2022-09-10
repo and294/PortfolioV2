@@ -109,7 +109,9 @@ const ProjectTitle = styled;
 
 const DescriptionRight = styled.div`
 width: 300px;
-text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
 position: absolute;
 bottom: -110px;
 background: rgba(255, 255, 255, 0.25);
@@ -297,16 +299,17 @@ export default function Work() {
             <h3>Concept restaurant</h3>
             <p
               style={{
+                fontSize: "0.85em",
                 width: "200px",
-                borderTop: "solid 1px white",
-                borderBottom: "solid 1px white",
-                margin: "20px 0px 20px 0px",
+                borderTop: "1px solid rgba(255, 255, 255, 0.79)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
+                margin: "20px 0px 10px 0px",
                 padding: "20px 0px 20px 0px",
               }}
             >
               Personnal project
             </p>
-            <p>
+            <p style={{fontSize: "0.85em"}}>
               HTML CSS
               <br />
               Javascript Gsap
@@ -320,8 +323,8 @@ export default function Work() {
             <p
               style={{
                 width: "100px",
-                borderTop: "solid 1px white",
-                borderBottom: "solid 1px white",
+                borderTop: "1px solid rgba(255, 255, 255, 0.79)",
+                borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
                 margin: "20px 0px 20px 0px",
                 padding: "20px 0px 20px 0px",
               }}
