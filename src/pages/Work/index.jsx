@@ -28,7 +28,7 @@ export const device = {
 };
 
 const WorkSection = styled.section`
-  background: #181818;
+  background: #1C1C1C;
   color: white;
   font-family: "GT america";
   width: 100vw;
@@ -93,14 +93,11 @@ const ProjectLeft = styled.div`
 `;
 
 const StyledImg = styled.img` 
-box-shadow: 0px 0.1px 0.2px hsl(0deg 0% 0% / 0),
-    0px 1.3px 2px hsl(0deg 0% 0% / 0.13),
-    -0.1px 2.4px 3.6px hsl(0deg 0% 0% / 0.25),
-    -0.1px 3.6px 5.4px hsl(0deg 0% 0% / 0.38),
-    -0.2px 5px 7.5px hsl(0deg 0% 0% / 0.51),
-    -0.3px 7px 10.5px hsl(0deg 0% 0% / 0.63),
-    -0.4px 9.7px 14.6px hsl(0deg 0% 0% / 0.76),
-    -0.5px 13.4px 20.1px hsl(0deg 0% 0% / 0.89);
+box-shadow: 0px 0.5px 0.8px hsl(0deg 0% 1% / 0),
+    0px 2.2px 3.3px hsl(0deg 0% 1% / 0.18),
+    0px 4px 6px hsl(0deg 0% 1% / 0.35),
+    0px 6.8px 10.2px hsl(0deg 0% 1% / 0.52),
+    -0.1px 11.7px 17.6px hsl(0deg 0% 1% / 0.7);
   border-radius: 5px;
   @media ${device.mobileS} {
   width: 100%
@@ -110,14 +107,15 @@ box-shadow: 0px 0.1px 0.2px hsl(0deg 0% 0% / 0),
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  width: 55%;
+  width: 75%;
   } ;
 `;
 
 const ProjectTitle = styled;
 
 const Description = styled.div`
-width: 300px;
+padding: 5px;
+width: th: 300px;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -189,13 +187,17 @@ const zoom = keyframes`
 `;
 
 const App = styled.div`
-  background-color: #474d5f;
+  background: rgba(71, 77, 95, 0.61);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(6.7px);
+-webkit-backdrop-filter: blur(6.7px);
   display: flex;
   justify-content: center;
   align-items: center;
   
   border-radius: 15px;
-  border: solid 6px #474d5f;
+  border: blur(6.7px) 6px #474d5f;
   position: relative;
   transition: 0.75s;
   @media ${device.mobileS} {

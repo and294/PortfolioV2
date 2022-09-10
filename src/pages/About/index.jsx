@@ -27,7 +27,7 @@ export const device = {
 };
 
 const AboutSection = styled.section`
-  background: #181818;
+  background: #1C1C1C;
   color: white;
   width: 100vw;
   display: flex;
