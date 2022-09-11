@@ -185,6 +185,10 @@ const Resume = styled.button`
     height: 50px;
     border-radius: 25px;
   } ;
+  &:active {
+    scale: 0.98;
+    background-color: #445687;
+  }
 `;
 
 const Scroll = styled.p`

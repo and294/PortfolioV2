@@ -290,7 +290,7 @@ export default function Work() {
       },
     });
     gsap.to("#img1", {
-      y: -170,
+      y: -50,
       duration: .1,
       scrollTrigger: {
         trigger: "#img1".current,
@@ -300,7 +300,7 @@ export default function Work() {
         scrub: true,}
     });
     gsap.from("#description1", {
-      y: -170,
+      y: -50,
       duration: .1,
       scrollTrigger: {
         trigger: "#description1".current,

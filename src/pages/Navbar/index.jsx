@@ -1,8 +1,9 @@
-import React from "react";
+import {React, useEffect} from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import styled from "styled-components";
+import { gsap, Power3 } from "gsap";
 
 export const sizes = {
   mobileS: "320px",
@@ -46,14 +47,16 @@ const NavLink = styled(Link)`
 export default function Navbar() {
   
   let tl = new gsap.timeline();
+  let ease = Power3.easeOut();
   
    useEffect(() => {
 
-    tl.from(['#aboutNav', line, city, resume, scroll], 2, {
+    tl.from(['#aboutNav', '#workNav', '#contactNav'], 2, {
       opacity: 0,
       y: '10',
+      delay: 2,
       stagger: {
-        amount: .1
+        amount: .5
       },
       ease: ease
     })
@@ -63,8 +66,8 @@ export default function Navbar() {
   return (
     <Nav>
       <a href="#about" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>About</a>
-      <a href="#work" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>Work</a>
-      <a href="#contact" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>Contact</a>
+      <a href="#work" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='workNav'>Work</a>
+      <a href="#contact" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='contactNav'>Contact</a>
     </Nav>
   );
 }

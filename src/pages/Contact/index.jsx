@@ -194,6 +194,11 @@ const Submit = styled.button`
     inset 0px -0.1px 0.1px -2.6px hsl(224deg 35% 18% / 0.55),
     inset 0.2px 9.4px 8.6px -3.9px hsl(224deg 35% 18% / 0.39);
   cursor: pointer;
+  transition: .25s;
+  &:active {
+    scale: 0.98;
+    background-color: #445687;
+  }
 `;
 
 export default function Contact() {
@@ -201,7 +206,7 @@ export default function Contact() {
     <>
       <ContactSection id="contact">
         <Left>
-          <Title>Contact Me</Title>
+          <Title>Contact</Title>
           <Mail>
             <MailImg
               src={
