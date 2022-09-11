@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Tilt from "react-parallax-tilt";
+import Tilt from "react-vanilla-tilt";
 import styled from "styled-components";
 
 import Navbar from "/src/pages/Navbar";
@@ -132,7 +132,7 @@ const Circle = styled.span`
  position: absolute;
   width: 500px;
   height: 500px;
-  border: solid #4c6096 10px;
+
   border-radius: 100%;
   z-index: 0;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
@@ -140,19 +140,19 @@ const Circle = styled.span`
   @media ${device.mobileS} {
     width: 300px;
     height: 300px;
-    border: solid #4c6096 5px;
+
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
     width: 400px;
     height: 400px;
-    border: solid #4c6096 7px;
+
   }
   @media ${device.laptop} {
     width: 500px;
     height: 500px;
-    border: solid #4c6096 10px;
+    
   } ;
 `;
 
@@ -242,7 +242,7 @@ export default function Home() {
           <Frontend>Frontend Developer</Frontend>
           <Line></Line>
           <Paris><i>Paris, France</i></Paris>
-          <Tilt><Circle></Circle></Tilt>
+          <Circle><Tilt style={{width: "100%", height: "100%", borderRadius: "100%", border: "solid #4c6096 7px", boxShadow: "0px 0px 21px 10px #4c6096"}}></Tilt></Circle>
         </NameSection>
         <Resume onClick={onButtonClick}>Resume</Resume>
         <Scroll>Scroll</Scroll>
