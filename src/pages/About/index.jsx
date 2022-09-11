@@ -214,9 +214,11 @@ const CircleFive = styled.div`
 `;
 
 export default function WelcomeBand() {
+  let tl = new gsap.timeline();
+  
   const title = useRef();
   const text = useRef();
-  const cicle1 = useRef();
+  const circle1 = useRef();
   const circle2 = useRef();
   const circle3 = useRef();
   const circle4 = useRef();
@@ -238,11 +240,24 @@ export default function WelcomeBand() {
       opacity: 0,
       duration: 1,
       scrollTrigger: {
-        trigger: title.current,
+        trigger: '#aboutText',
         markers: false,
-        start: "top 80%"
+        start: "top 70%"
       },
     });
+    tl.from(['#circle1', '#circle2', '#circle3', '#circle4', '#circle5'], 3, {
+      opacity: 0,
+      y: 50,
+      stagger: {
+        amount: .7
+      },
+            scrollTrigger: {
+        trigger: '#circle1'.current,
+        markers: false,
+        start: "top 90%"
+      },
+    })
+    
   }, []);
   
   return (
@@ -272,19 +287,19 @@ export default function WelcomeBand() {
           </p>
         </Left>
         <Right>
-          <CircleOne></CircleOne>
-          <CircleTwo style={{ textAlign: "center" }}>
+          <CircleOne id="circle1"></CircleOne>
+          <CircleTwo id="circle2" style={{ textAlign: "center" }}>
             Web
             <br /> integration
           </CircleTwo>
-          <CircleThree style={{ textAlign: "center" }}>
+          <CircleThree id="circle3" style={{ textAlign: "center" }}>
             Frontend development
           </CircleThree>
-          <CircleFour>
+          <CircleFour id="circle4">
             UX/UI
             <br /> design
           </CircleFour>
-          <CircleFive></CircleFive>
+          <CircleFive id="circle5"></CircleFive>
         </Right>
       </AboutSection>
     </>

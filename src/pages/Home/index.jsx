@@ -230,14 +230,20 @@ let ease = Power3.easeOut();
   let nav = useRef(null);
   let scroll = useRef(null);
   useEffect(() => {
-    tl.from(name, 1, {
+    tl.from(circle, 1, {
       opacity: 0,
-      y: '100'
+      duration: 1
+    });
+    
+    tl.from(name, 2, {
+      opacity: 0,
+      y: '20',
+
     });
     
     tl.from([front, line, city, resume, scroll], 3, {
       opacity: 0,
-      y: '50',
+      y: '10',
       stagger: {
         amount: .5
       },
