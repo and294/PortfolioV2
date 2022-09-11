@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
-import "/styles/styles.css";
+import "/src/styles/styles.css";
 import Navbar from "/src/pages/Navbar";
 
 export const sizes = {
