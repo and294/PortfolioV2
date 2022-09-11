@@ -216,18 +216,37 @@ const Scroll = styled.p`
   } ;
 `;
 
-let tl = new gsap.timeline();
-let ease = Power3.easeOut()
 
 
-export default function Home({timeline, ease}) {
+
+export default function Home() {
+  let tl = new gsap.timeline();
+let ease = Power3.easeOut();
+  
   
   let name = useRef(null);
   let front = useRef(null);
-  let city = useRef(null);
   let line = useRef(null);
+  let city = useRef(null);
   let resume = useRef(null);
-  let 
+  let nav = useRef(null);
+  let scroll = useRef(null);
+  useEffect(() => {
+    tl.from(name, 1, {
+      opacity: 0,
+      y: '100'
+    });
+    
+    tl.from([front, line, city, resume, scroll], 2, {
+      opacity: 0,
+      y: '50',
+      stagger: {
+        amount: .5
+      },
+      ease: ease
+    })
+    
+  })
   
       const onButtonClick = () => {
         // using Java Script method to get PDF file
@@ -247,16 +266,16 @@ export default function Home({timeline, ease}) {
   return (
     <>
       <Landing>
-        <Navbar className="nav" />
+        <Navbar ref= {el => nav = el}/>
         <NameSection>
-          <Name className="name">ANDREA FERRARO</Name>
-          <Frontend className="front">Frontend Developer</Frontend>
-          <Line className="line"></Line>
-          <Paris className="city"><i>Paris, France</i></Paris>
+          <Name ref= {el => name = el}>ANDREA FERRARO</Name>
+          <Frontend ref= {el => front = el}>Frontend Developer</Frontend>
+          <Line ref= {el => line = el}></Line>
+          <Paris ref= {el => city = el}><i>Paris, France</i></Paris>
           <Tilt id="circle" style={{borderRadius: "100%"}}></Tilt>
         </NameSection>
-        <Resume className="resume" onClick={onButtonClick}>Resume</Resume>
-        <Scroll className="scroll">Scroll</Scroll>
+        <Resume ref= {el => resume = el} onClick={onButtonClick}>Resume</Resume>
+        <Scroll ref= {el => scroll = el}>Scroll</Scroll>
       </Landing>
     </>
   );
