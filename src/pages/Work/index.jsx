@@ -93,46 +93,46 @@ const StyledImg = styled.img`
 `;
 
 const ProjectTitle = styled.h3`
-color: #344268;
-@media ${device.mobileS} {
-font-size: 1em;
+  color: #344268;
+  @media ${device.mobileS} {
+    font-size: 1em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
-  font-size: 1.25em;
+    font-size: 1.25em;
   }
   @media ${device.laptop} {
   } ;
 `;
 
 const Description = styled.div`
-color: white;
-padding: 5px;
-display: flex;
-flex-direction: column;
-align-items: center;
-position: absolute;
-bottom: -110px;
-background: rgba(255, 255, 255, 0.25);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(6.7px);
--webkit-backdrop-filter: blur(6.7px);
-border: 1px solid rgba(255, 255, 255, 0.09);
+  color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: -110px;
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.7px);
+  -webkit-backdrop-filter: blur(6.7px);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   @media ${device.mobileS} {
-  text-align: center;
-  margin-top: 30px;
-  width: 200px;
-  font-size: 0.75em;
+    text-align: center;
+    margin-top: 30px;
+    width: 200px;
+    font-size: 0.75em;
   }
   @media ${device.mobileM} {
   }
   @media ${device.tablet} {
   }
   @media ${device.laptop} {
-  width: 300px;
-  font-size: 0.85em;
+    width: 300px;
+    font-size: 0.85em;
   } ;
 `;
 
@@ -277,45 +277,45 @@ export default function Work() {
           <Dot>&#x2022;</Dot>
         </Title>
 
-        <Project>
-          <a href="https://sweet-and-sour-restaurant.glitch.me/index.html">
-          <StyledImg
-            
-            
-            src={
-              "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
-            }
-          />
-          <Description>
-            <ProjectTitle>Concept restaurant</ProjectTitle>
-            <p
-              style={{
-                fontSize: "0.85em",
-                width: "200px",
-                borderTop: "1px solid rgba(255, 255, 255, 0.79)",
-                borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
-                margin: "20px 0px 10px 0px",
-                padding: "15px 0px 15px 0px",
-              }}
-            >
-              Personnal project
-            </p>
-            <p style={{ fontSize: "0.85em" }}>
-              HTML CSS
-              <br />
-              Javascript Gsap
-            </p>
-          </Description>
-          </a>
-          
-        </Project>
+        <a
+          href="https://sweet-and-sour-restaurant.glitch.me/index.html"
+          target="_blank"
+        >
+          <Project>
+            <StyledImg
+              src={
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
+              }
+            />
+            <Description>
+              <ProjectTitle>Concept restaurant</ProjectTitle>
+              <p
+                style={{
+                  fontSize: "0.85em",
+                  width: "200px",
+                  borderTop: "1px solid rgba(255, 255, 255, 0.79)",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
+                  margin: "20px 0px 10px 0px",
+                  padding: "15px 0px 15px 0px",
+                }}
+              >
+                Personnal project
+              </p>
+              <p style={{ fontSize: "0.85em" }}>
+                HTML CSS
+                <br />
+                Javascript Gsap
+              </p>
+            </Description>
+          </Project>
+        </a>
 
+        <a href="https://shiny-agency-and29.glitch.me/" target="_blank">
         <Project style={{ marginTop: "200px" }}>
           <Description>
             <ProjectTitle>Freelance agency</ProjectTitle>
             <p
               style={{
-                
                 width: "200px",
                 borderTop: "1px solid rgba(255, 255, 255, 0.79)",
                 borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
@@ -339,6 +339,8 @@ export default function Work() {
             width="50%"
           />
         </Project>
+        </a>
+        
 
         <Project style={{ marginTop: "200px" }}>
           <StyledImg
@@ -366,6 +368,7 @@ export default function Work() {
         </Project>
 
         <AppGrid>
+          <a href="https://translator-react.glitch.me/" target="_blank">
           <App>
             <AppImg
               href="https://translator-react.glitch.me/"
@@ -376,6 +379,9 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Translator</AppName>
           </App>
+          </a>
+          
+          <a href="https://react-calculator-and29.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -385,6 +391,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Calculator</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://js-grocery-list.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -394,6 +404,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>To Do</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://drum-machine-and29.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -403,6 +417,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Drum Machine</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://js-clock-and29.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -412,6 +430,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Clock</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://wiki-viewer-and29.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -421,6 +443,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Wiki Viewer</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://random-futurama-quotes.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -430,6 +456,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Random Quote Generator</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://weather-app-and29.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -439,6 +469,10 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Weather</AppName>
           </App>
+          </a>
+          
+          
+          <a href="https://countdown-session-timer.glitch.me/" target="_blank">
           <App>
             <AppImg
               src={
@@ -448,6 +482,8 @@ export default function Work() {
             <Bg></Bg>
             <AppName>Interval Timer</AppName>
           </App>
+          </a>
+          
         </AppGrid>
       </WorkSection>
     </>
