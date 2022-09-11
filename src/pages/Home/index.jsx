@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { gsap } from "gsap";
+import { gsap, Power3 } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tilt from "react-vanilla-tilt";
 import styled from "styled-components";
@@ -216,7 +216,18 @@ const Scroll = styled.p`
   } ;
 `;
 
-export default function Home() {
+let tl = new gsap.timeline();
+let ease = Power3.easeOut()
+
+
+export default function Home({timeline, ease}) {
+  
+  let name = useRef(null);
+  let front = useRef(null);
+  let city = useRef(null);
+  let line = useRef(null);
+  let resume = useRef(null);
+  let 
   
       const onButtonClick = () => {
         // using Java Script method to get PDF file
@@ -236,16 +247,16 @@ export default function Home() {
   return (
     <>
       <Landing>
-        <Navbar />
+        <Navbar className="nav" />
         <NameSection>
-          <Name>ANDREA FERRARO</Name>
-          <Frontend>Frontend Developer</Frontend>
-          <Line></Line>
-          <Paris><i>Paris, France</i></Paris>
+          <Name className="name">ANDREA FERRARO</Name>
+          <Frontend className="front">Frontend Developer</Frontend>
+          <Line className="line"></Line>
+          <Paris className="city"><i>Paris, France</i></Paris>
           <Tilt id="circle" style={{borderRadius: "100%"}}></Tilt>
         </NameSection>
-        <Resume onClick={onButtonClick}>Resume</Resume>
-        <Scroll>Scroll</Scroll>
+        <Resume className="resume" onClick={onButtonClick}>Resume</Resume>
+        <Scroll className="scroll">Scroll</Scroll>
       </Landing>
     </>
   );
