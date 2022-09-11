@@ -79,6 +79,7 @@ const StyledImg = styled.img`
     0px 6.8px 10.2px hsl(0deg 0% 1% / 0.52),
     -0.1px 11.7px 17.6px hsl(0deg 0% 1% / 0.7);
   border-radius: 5px;
+  cursor: pointer;
   @media ${device.mobileS} {
     width: 90%;
   }
@@ -200,6 +201,7 @@ const App = styled.div`
 const AppImg = styled.img`
   width: 70%;
   z-index: 1;
+  cursor: pointer;
   ${App}:hover & {
     animation: ${zoom} 0.45s ease-Out;
   }
@@ -276,7 +278,10 @@ export default function Work() {
         </Title>
 
         <Project>
+          <a href="https://sweet-and-sour-restaurant.glitch.me/index.html">
           <StyledImg
+            
+            
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
             }
@@ -301,6 +306,8 @@ export default function Work() {
               Javascript Gsap
             </p>
           </Description>
+          </a>
+          
         </Project>
 
         <Project style={{ marginTop: "200px" }}>
@@ -325,6 +332,7 @@ export default function Work() {
             </p>
           </Description>
           <StyledImg
+            href="https://shiny-agency-and29.glitch.me/"
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
             }
@@ -360,6 +368,7 @@ export default function Work() {
         <AppGrid>
           <App>
             <AppImg
+              href="https://translator-react.glitch.me/"
               src={
                 "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"
               }
