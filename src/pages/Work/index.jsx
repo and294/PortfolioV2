@@ -289,13 +289,23 @@ export default function Work() {
         start: "top 90%",
       },
     });
-    gsap.from("#img1", {
-      y: 170,
-      duration: 1,
+    gsap.to("#img1", {
+      y: -170,
+      duration: .1,
       scrollTrigger: {
         trigger: "#img1".current,
         markers: false,
-        start: "top bottom",
+        start: "top center",
+        end: "bottom top",
+        scrub: true,}
+    });
+    gsap.from("#description1", {
+      y: -170,
+      duration: .1,
+      scrollTrigger: {
+        trigger: "#description1".current,
+        markers: false,
+        start: "top center",
         end: "bottom top",
         scrub: true,}
     });
@@ -371,7 +381,7 @@ export default function Work() {
                 "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
               }
             />
-            <Description>
+            <Description id='description1'>
               <ProjectTitle>Concept restaurant</ProjectTitle>
               <p
                 style={{
