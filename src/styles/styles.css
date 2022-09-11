@@ -47,7 +47,7 @@ a:active {
 
 #circle {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0);
+ width: 500px;
   height: 500px;
   aspect-ratio: 1;
   border: solid #4c6096 10px;

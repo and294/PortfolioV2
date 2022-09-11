@@ -5,8 +5,9 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Tilt from "react-vanilla-tilt";
+import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
+import "/styles/styles.css";
 import Navbar from "/src/pages/Navbar";
 
 export const sizes = {

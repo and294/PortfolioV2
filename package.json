@@ -18,7 +18,8 @@
     "react-router-hash-link": "^2.4.3",
     "react-social-icons": "^5.13.0",
     "classnames": "^2.3.1",
-    "react-vanilla-tilt": "^1.0.0"
+    "react-vanilla-tilt": "^1.0.0",
+    "react-parallax-tilt": "^1.7.61"
   },
   "devDependencies": {
     "vite": "^2.1.0"
