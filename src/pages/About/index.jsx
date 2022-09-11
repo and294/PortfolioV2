@@ -247,12 +247,12 @@ export default function WelcomeBand() {
     });
     tl.from(['#circle1', '#circle2', '#circle3', '#circle4', '#circle5'], 3, {
       opacity: 0,
-      y: 50,
+      y: 100,
       stagger: {
         amount: .7
       },
             scrollTrigger: {
-        trigger: '#circle1'.current,
+        trigger: '#circle1',
         markers: false,
         start: "top 90%"
       },

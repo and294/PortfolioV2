@@ -268,10 +268,90 @@ const Bg = styled.span`
 `;
 
 export default function Work() {
+  useEffect(() => {
+    gsap.from("#worktitle", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#worktitle",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+    gsap.from("#project1", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#project1",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+    gsap.from("#img1", {
+      y: 10,
+      opacity: 0,
+      duration: 1,
+      scrub: true
+    });
+    gsap.from("#project2", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#project2",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+    gsap.from("#project3", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#project3",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+
+    gsap.from("#line1", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#line1",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+    gsap.from("#line2", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#line2",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+    gsap.from("#line3", {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#line3",
+        markers: false,
+        start: "top 90%",
+      },
+    });
+  }, []);
+
   return (
     <>
       <WorkSection id="work">
-        <Title>
+        <Title id="worktitle">
           <Dot>&#x2022;</Dot>
           &nbsp;WORK&nbsp;
           <Dot>&#x2022;</Dot>
@@ -281,8 +361,8 @@ export default function Work() {
           href="https://sweet-and-sour-restaurant.glitch.me/index.html"
           target="_blank"
         >
-          <Project>
-            <StyledImg
+          <Project id="project1">
+            <StyledImg id='img1'
               src={
                 "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Screenshot%202022-05-05%20at%2011-48-47%20Sweet%20and%20Sour.png?v=1662368676833"
               }
@@ -311,39 +391,39 @@ export default function Work() {
         </a>
 
         <a href="https://shiny-agency-and29.glitch.me/" target="_blank">
-        <Project style={{ marginTop: "200px" }}>
-          <Description>
-            <ProjectTitle>Freelance agency</ProjectTitle>
-            <p
-              style={{
-                width: "200px",
-                borderTop: "1px solid rgba(255, 255, 255, 0.79)",
-                borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
-                margin: "20px 0px 10px 0px",
-                padding: "20px 0px 20px 0px",
-              }}
-            >
-              Personnal project
-            </p>
-            <p>
-              HTML CSS
-              <br />
-              ReactJS Gsap
-            </p>
-          </Description>
-          <StyledImg
-            href="https://shiny-agency-and29.glitch.me/"
-            src={
-              "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
-            }
-            width="50%"
-          />
-        </Project>
+          <Project id="project2" style={{ marginTop: "200px" }}>
+            <Description>
+              <ProjectTitle>Freelance agency</ProjectTitle>
+              <p
+                style={{
+                  width: "200px",
+                  borderTop: "1px solid rgba(255, 255, 255, 0.79)",
+                  borderBottom: "1px solid rgba(255, 255, 255, 0.79)",
+                  margin: "20px 0px 10px 0px",
+                  padding: "20px 0px 20px 0px",
+                }}
+              >
+                Personnal project
+              </p>
+              <p>
+                HTML CSS
+                <br />
+                ReactJS Gsap
+              </p>
+            </Description>
+            <StyledImg
+              id='img2'
+              src={
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
+              }
+              width="50%"
+            />
+          </Project>
         </a>
-        
 
-        <Project style={{ marginTop: "200px" }}>
+        <Project id="project3" style={{ marginTop: "200px" }}>
           <StyledImg
+            id='img3'
             src={
               "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%201BB58%20landing.png?v=1662371147279"
             }
@@ -369,121 +449,113 @@ export default function Work() {
 
         <AppGrid>
           <a href="https://translator-react.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              href="https://translator-react.glitch.me/"
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Translator</AppName>
-          </App>
+            <App id="line1">
+              <AppImg
+                href="https://translator-react.glitch.me/"
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2032Translotor.svg?v=1662373208389"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Translator</AppName>
+            </App>
           </a>
-          
+
           <a href="https://react-calculator-and29.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2033Calculator.svg?v=1662459179532"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Calculator</AppName>
-          </App>
+            <App id="line1">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2033Calculator.svg?v=1662459179532"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Calculator</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://js-grocery-list.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2034To%20do%20list.svg?v=1662459181187"
-              }
-            />
-            <Bg></Bg>
-            <AppName>To Do</AppName>
-          </App>
+            <App id="line1">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2034To%20do%20list.svg?v=1662459181187"
+                }
+              />
+              <Bg></Bg>
+              <AppName>To Do</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://drum-machine-and29.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2035Drum%20machine.svg?v=1662459182865"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Drum Machine</AppName>
-          </App>
+            <App id="line2">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2035Drum%20machine.svg?v=1662459182865"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Drum Machine</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://js-clock-and29.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2041Clock.svg?v=1662459438222"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Clock</AppName>
-          </App>
+            <App id="line2">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2041Clock.svg?v=1662459438222"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Clock</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://wiki-viewer-and29.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2037Wiki%20viewer.svg?v=1662459187558"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Wiki Viewer</AppName>
-          </App>
+            <App id="line2">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2037Wiki%20viewer.svg?v=1662459187558"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Wiki Viewer</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://random-futurama-quotes.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2038Radom%20quote.svg?v=1662459189656"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Random Quote Generator</AppName>
-          </App>
+            <App id="line3">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2038Radom%20quote.svg?v=1662459189656"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Random Quote Generator</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://weather-app-and29.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2039Weather%20app.svg?v=1662459191651"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Weather</AppName>
-          </App>
+            <App id="line3">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2039Weather%20app.svg?v=1662459191651"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Weather</AppName>
+            </App>
           </a>
-          
-          
+
           <a href="https://countdown-session-timer.glitch.me/" target="_blank">
-          <App>
-            <AppImg
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2040Timer.svg?v=1662461125896"
-              }
-            />
-            <Bg></Bg>
-            <AppName>Interval Timer</AppName>
-          </App>
+            <App id="line3">
+              <AppImg
+                src={
+                  "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Group%2040Timer.svg?v=1662461125896"
+                }
+              />
+              <Bg></Bg>
+              <AppName>Interval Timer</AppName>
+            </App>
           </a>
-          
         </AppGrid>
       </WorkSection>
     </>
