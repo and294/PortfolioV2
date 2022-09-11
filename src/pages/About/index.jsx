@@ -214,7 +214,7 @@ const CircleFive = styled.div`
 `;
 
 export default function WelcomeBand() {
-  const title = useRef();
+  const title = useRef(null);
   const text = useRef();
   const cicle1 = useRef();
   const circle2 = useRef();
@@ -223,15 +223,13 @@ export default function WelcomeBand() {
   const circle5 = useRef();
 
   useEffect(() => {
-    gsap.to(title.current, {
-      y: -500,
+    gsap.to(title, {
+      y: -100,
       duration: 1,
       scrollTrigger: {
-        trigger: welcomeInner.current,
+        trigger: title.current,
         markers: false,
-        start: "top bottom",
-        end: "bottom top",
-        scrub: true,
+        start: "top center"
       },
     });
   }, []);
@@ -240,7 +238,7 @@ export default function WelcomeBand() {
     <>
       <AboutSection id="about">
         <Left>
-          <AboutMe>
+          <AboutMe ref= {el => title = el} >
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
             &nbsp;ABOUT ME
           </AboutMe>

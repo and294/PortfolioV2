@@ -129,10 +129,9 @@ const Paris = styled.p`
 `;
 
 const Circle = styled.span`
- position: absolute;
+  position: absolute;
   width: 500px;
   height: 500px;
-
   border-radius: 100%;
   z-index: 0;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
@@ -140,7 +139,7 @@ const Circle = styled.span`
   @media ${device.mobileS} {
     width: 300px;
     height: 300px;
-
+    border: solid 5px #4c6096;
   }
   @media ${device.mobileM} {
   }
@@ -223,7 +222,7 @@ export default function Home() {
   let tl = new gsap.timeline();
 let ease = Power3.easeOut();
   
-  let circle = useRef(null);
+  let circle = useRef();
   let name = useRef(null);
   let front = useRef(null);
   let line = useRef(null);
@@ -247,6 +246,19 @@ let ease = Power3.easeOut();
     })
     
   })
+  useEffect(() => {
+    gsap.to(circle.current, {
+      y: -100,
+      duration: 1,
+      scrollTrigger: {
+        trigger: circle.current,
+        markers: false,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,
+      },
+    });
+  }, []);
   
       const onButtonClick = () => {
         // using Java Script method to get PDF file
@@ -272,7 +284,7 @@ let ease = Power3.easeOut();
           <Frontend ref= {el => front = el}>Frontend Developer</Frontend>
           <Line ref= {el => line = el}></Line>
           <Paris ref= {el => city = el}><i>Paris, France</i></Paris>
-          <Tilt id="circle" style={{borderRadius: "100%" }}></Tilt>
+          <Circle ref={circle}></Circle>
         </NameSection>
         <Resume ref= {el => resume = el} onClick={onButtonClick}>Resume</Resume>
         <Scroll ref= {el => scroll = el}>Scroll</Scroll>
