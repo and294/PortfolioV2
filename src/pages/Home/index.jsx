@@ -242,7 +242,7 @@ export default function Home() {
           <Frontend>Frontend Developer</Frontend>
           <Line></Line>
           <Paris><i>Paris, France</i></Paris>
-          <Circle><Tilt style={{width: "100%", height: "100%", borderRadius: "100%", border: "solid #4c6096 7px", boxShadow: "0px 0px 21px 10px #4c6096"}}></Tilt></Circle>
+          <Tilt id="circle" style={{borderRadius: "100%"}}></Tilt>
         </NameSection>
         <Resume onClick={onButtonClick}>Resume</Resume>
         <Scroll>Scroll</Scroll>
