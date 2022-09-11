@@ -47,11 +47,10 @@ a:active {
   text-decoration: none;
 }
 
-#circle {
+Tilt {
   position: absolute;
   width: 500px;
   height: 500px;
-  aspect-ratio: 1;
   border: solid #4c6096 10px;
   border-radius: 100%;
   z-index: 0;

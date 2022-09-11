@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Tilt from "react-parallax-tilt";
 import styled from "styled-components";
-import "/src/styles/styles.css";
+
 import Navbar from "/src/pages/Navbar";
 
 export const sizes = {
@@ -129,7 +129,7 @@ const Paris = styled.p`
 `;
 
 const Circle = styled.span`
-  position: absolute;
+ position: absolute;
   width: 500px;
   height: 500px;
   border: solid #4c6096 10px;
@@ -242,7 +242,7 @@ export default function Home() {
           <Frontend>Frontend Developer</Frontend>
           <Line></Line>
           <Paris><i>Paris, France</i></Paris>
-          <Tilt id="circle"></Tilt>
+          <Tilt><Circle></Circle></Tilt>
         </NameSection>
         <Resume onClick={onButtonClick}>Resume</Resume>
         <Scroll>Scroll</Scroll>
