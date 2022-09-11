@@ -232,20 +232,20 @@ let ease = Power3.easeOut();
   useEffect(() => {
     tl.from(circle, 1, {
       opacity: 0,
-      duration: 1
+      duration: .1
     });
     
-    tl.from(name, 2, {
+    tl.from(name, 1, {
       opacity: 0,
       y: '20',
 
     });
     
-    tl.from([front, line, city, resume, scroll], 3, {
+    tl.from([front, line, city, resume, scroll], 2, {
       opacity: 0,
       y: '10',
       stagger: {
-        amount: .5
+        amount: .1
       },
       ease: ease
     })

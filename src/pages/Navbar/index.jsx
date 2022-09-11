@@ -44,11 +44,27 @@ const NavLink = styled(Link)`
 `;
 
 export default function Navbar() {
+  
+  let tl = new gsap.timeline();
+  
+   useEffect(() => {
+
+    tl.from(['#aboutNav', line, city, resume, scroll], 2, {
+      opacity: 0,
+      y: '10',
+      stagger: {
+        amount: .1
+      },
+      ease: ease
+    })
+    
+  })
+  
   return (
     <Nav>
-      <a href="#about" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>About</a>
-      <a href="#work" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>Work</a>
-      <a href="#contact" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}}>Contact</a>
+      <a href="#about" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>About</a>
+      <a href="#work" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>Work</a>
+      <a href="#contact" style={{fontSize: '14px', fontFamily: "GT america", marginRight: "15px", cursor: "pointer"}} id='aboutNav'>Contact</a>
     </Nav>
   );
 }

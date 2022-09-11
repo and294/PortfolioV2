@@ -309,26 +309,27 @@ export default function Work() {
         end: "bottom top",
         scrub: true,}
     });
-    gsap.from("#project2", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
+    gsap.to("#img2", {
+      y: -30,
+      duration: .1,
       scrollTrigger: {
-        trigger: "#project2",
+        trigger: "#img2",
         markers: false,
-        start: "top 90%",
-      },
+        start: "top center",
+        end: "bottom top",
+        scrub: true,}
     });
-    gsap.from("#project3", {
-      y: 100,
-      opacity: 0,
-      duration: 1,
+    gsap.to("#img3", {
+      y: -30,
+      duration: .1,
       scrollTrigger: {
-        trigger: "#project3",
+        trigger: "#img3",
         markers: false,
-        start: "top 90%",
-      },
+        start: "top center",
+        end: "bottom top",
+        scrub: true,}
     });
+  
 
     gsap.from("#line1", {
       y: 100,
@@ -406,7 +407,14 @@ export default function Work() {
 
         <a href="https://shiny-agency-and29.glitch.me/" target="_blank">
           <Project id="project2" style={{ marginTop: "200px" }}>
-            <Description>
+            <StyledImg
+              id='img2'
+              src={
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
+              }
+              width="50%"
+            />
+            <Description id='description2'>
               <ProjectTitle>Freelance agency</ProjectTitle>
               <p
                 style={{
@@ -425,13 +433,6 @@ export default function Work() {
                 ReactJS Gsap
               </p>
             </Description>
-            <StyledImg
-              id='img2'
-              src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Miniature%20Shiny%20portfolio.png?v=1662370737822"
-              }
-              width="50%"
-            />
           </Project>
         </a>
 
@@ -443,7 +444,7 @@ export default function Work() {
             }
             width="50%"
           />
-          <Description>
+          <Description id='description3'>
             <ProjectTitle>Tudor BlackBay 58 redesign</ProjectTitle>
             <p
               style={{
