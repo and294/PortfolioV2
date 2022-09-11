@@ -132,27 +132,26 @@ const Circle = styled.span`
   position: absolute;
   width: 500px;
   height: 500px;
+  border: solid #4c6096 10px;
   border-radius: 100%;
   z-index: 0;
   -webkit-box-shadow: 0px 0px 21px 10px #4c6096;
   box-shadow: 0px 0px 21px 10px #4c6096;
-  @media ${device.mobileS} {
+  @media (min-width: 320px) {
     width: 300px;
     height: 300px;
-    border: solid 5px #4c6096;
+    border: solid #4c6096 5px;
   }
-  @media ${device.mobileM} {
-  }
-  @media ${device.tablet} {
+  @media (min-width: 768px) {
     width: 400px;
     height: 400px;
-
+    border: solid #4c6096 7px;
   }
-  @media ${device.laptop} {
+  @media (min-width: 1024px) {
     width: 500px;
     height: 500px;
-    
-  } ;
+    border: solid #4c6096 10px;
+  }
 `;
 
 const Resume = styled.button`
@@ -284,7 +283,7 @@ let ease = Power3.easeOut();
           <Frontend ref= {el => front = el}>Frontend Developer</Frontend>
           <Line ref= {el => line = el}></Line>
           <Paris ref= {el => city = el}><i>Paris, France</i></Paris>
-          <Circle ref={circle}></Circle>
+          <Circle ref= {el => circle = el}></Circle>
         </NameSection>
         <Resume ref= {el => resume = el} onClick={onButtonClick}>Resume</Resume>
         <Scroll ref= {el => scroll = el}>Scroll</Scroll>

@@ -214,7 +214,7 @@ const CircleFive = styled.div`
 `;
 
 export default function WelcomeBand() {
-  const title = useRef(null);
+  const title = useRef();
   const text = useRef();
   const cicle1 = useRef();
   const circle2 = useRef();
@@ -223,13 +223,24 @@ export default function WelcomeBand() {
   const circle5 = useRef();
 
   useEffect(() => {
-    gsap.to(title, {
-      y: -100,
+    gsap.from('#title', {
+      y: 100,
+      opacity: 0,
       duration: 1,
       scrollTrigger: {
         trigger: title.current,
         markers: false,
-        start: "top center"
+        start: "top 90%"
+      },
+    });
+    gsap.from('#aboutText', {
+      y: 100,
+      opacity: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: title.current,
+        markers: false,
+        start: "top 80%"
       },
     });
   }, []);
@@ -238,11 +249,11 @@ export default function WelcomeBand() {
     <>
       <AboutSection id="about">
         <Left>
-          <AboutMe ref= {el => title = el} >
+          <AboutMe id="title" ref={title} >
             <span style={{ color: "#4c6096", fontSize: "35px" }}>&#x2022;</span>
             &nbsp;ABOUT ME
           </AboutMe>
-          <p style={{ lineHeight: "1.1" }}>
+          <p id="aboutText" style={{ lineHeight: "1.1" }}>
             Hi, I'm a{" "}
             <span style={{ color: "#4c6096" }}>
               self thaught front-end developer
