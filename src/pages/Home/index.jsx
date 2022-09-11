@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import Tilt from "react-vanilla-tilt";
 import styled from "styled-components";
 import Navbar from "/src/pages/Navbar";
 
@@ -30,7 +31,7 @@ export const device = {
 gsap.registerPlugin(ScrollTrigger);
 
 const Landing = styled.section`
-  background: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.png?v=1662027272290");
+  background: url("https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/Topo%20landing%20background%201Landing%20background.jpg?v=1662889799038");
   height: 100vh;
   width: 100vw;
   color: white;
@@ -240,7 +241,7 @@ export default function Home() {
           <Frontend>Frontend Developer</Frontend>
           <Line></Line>
           <Paris><i>Paris, France</i></Paris>
-          <Circle></Circle>
+          <Tilt id="circle"></Tilt>
         </NameSection>
         <Resume onClick={onButtonClick}>Resume</Resume>
         <Scroll>Scroll</Scroll>

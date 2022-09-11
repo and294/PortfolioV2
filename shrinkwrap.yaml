@@ -7,6 +7,7 @@ dependencies:
   react-router-dom: 5.3.3
   react-router-hash-link: 2.4.3
   react-social-icons: 5.14.0
+  react-vanilla-tilt: 1.0.0
   styled-components: 5.3.5
 devDependencies:
   vite: 2.1.2
@@ -921,6 +922,12 @@ packages:
       react: 15.x.x || 16.x.x || 17.x.x || 18.x.x
     resolution:
       integrity: sha512-E5pR2pIJM0vW1BhX7LdMlQS6MD2qOF8wdIm+PEfqFpW3Pn/VwLtbrjywE3/DG+rZ1YYM0GM8M11jaBxelbz/yQ==
+  /react-vanilla-tilt/1.0.0:
+    dependencies:
+      vanilla-tilt: 1.4.1
+    dev: false
+    resolution:
+      integrity: sha512-AuFFvbudpQIdzPeci9kP4p4Mo3QVIEtFVNu+iskMzNT0Efhi1fH5wzmdfMqWX8g82ypVgjAlwgdBWL9opnL2ow==
   /react/18.0.0:
     dependencies:
       loose-envify: 1.4.0
@@ -1041,6 +1048,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-NOJ6JZCAWr0zlxZt+xqCHNTEKOsrks2HQd4MqhP1qy4z1SkbEP467eNx6TgDKXMvUOb+OENfJCZwM+16n7fRfw==
+  /vanilla-tilt/1.4.1:
+    dev: false
+    resolution:
+      integrity: sha512-yZS4jIejmhqThLlwzJ5juPwDMk6rtf+ekADDK1lAYNiw6H2VGAJr9bt8vCp+ED5kyK6sE0sMq6mxPfV8a/NdFw==
   /vite/2.1.2:
     dependencies:
       esbuild: 0.9.6
@@ -1067,5 +1078,6 @@ specifiers:
   react-router-dom: ^5.3.3
   react-router-hash-link: ^2.4.3
   react-social-icons: ^5.13.0
+  react-vanilla-tilt: ^1.0.0
   styled-components: ^5.3.4
   vite: ^2.1.0
