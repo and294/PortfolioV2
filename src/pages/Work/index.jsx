@@ -290,10 +290,14 @@ export default function Work() {
       },
     });
     gsap.from("#img1", {
-      y: 10,
-      opacity: 0,
+      y: 170,
       duration: 1,
-      scrub: true
+      scrollTrigger: {
+        trigger: "#img1".current,
+        markers: false,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: true,}
     });
     gsap.from("#project2", {
       y: 100,
