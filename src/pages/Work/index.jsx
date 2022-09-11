@@ -334,7 +334,7 @@ export default function Work() {
     gsap.from("#line1", {
       y: 100,
       opacity: 0,
-      duration: 1,
+      duration: .5,
       scrollTrigger: {
         trigger: "#line1",
         markers: false,
@@ -344,7 +344,7 @@ export default function Work() {
     gsap.from("#line2", {
       y: 100,
       opacity: 0,
-      duration: 1,
+      duration: .5,
       scrollTrigger: {
         trigger: "#line2",
         markers: false,
@@ -354,7 +354,7 @@ export default function Work() {
     gsap.from("#line3", {
       y: 100,
       opacity: 0,
-      duration: 1,
+      duration: .5,
       scrollTrigger: {
         trigger: "#line3",
         markers: false,
