@@ -223,7 +223,7 @@ export default function Home() {
   let tl = new gsap.timeline();
 let ease = Power3.easeOut();
   
-  
+  let circle = useRef(null);
   let name = useRef(null);
   let front = useRef(null);
   let line = useRef(null);
@@ -237,7 +237,7 @@ let ease = Power3.easeOut();
       y: '100'
     });
     
-    tl.from([front, line, city, resume, scroll], 2, {
+    tl.from([front, line, city, resume, scroll], 3, {
       opacity: 0,
       y: '50',
       stagger: {
@@ -272,7 +272,7 @@ let ease = Power3.easeOut();
           <Frontend ref= {el => front = el}>Frontend Developer</Frontend>
           <Line ref= {el => line = el}></Line>
           <Paris ref= {el => city = el}><i>Paris, France</i></Paris>
-          <Tilt id="circle" style={{borderRadius: "100%"}}></Tilt>
+          <Tilt id="circle" style={{borderRadius: "100%" }}></Tilt>
         </NameSection>
         <Resume ref= {el => resume = el} onClick={onButtonClick}>Resume</Resume>
         <Scroll ref= {el => scroll = el}>Scroll</Scroll>
