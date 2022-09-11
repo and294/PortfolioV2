@@ -66,26 +66,50 @@ margin-bottom: 100px;
 
 const HtmlCssJs = styled.img`
 width: 20%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 const ReactImg = styled.img`
 width: 25%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 const Jquery = styled.img`
 width: 28%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 const Mongo = styled.img`
 width: 30%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 const Figma = styled.img`
 width: 8%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 const AI = styled.img`
 width: 12%;
+transition: .5s;
+&:hover{
+scale: 1.1;
+}
 `;
 
 

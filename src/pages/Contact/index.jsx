@@ -71,6 +71,7 @@ const Title = styled.h1`
 const Mail = styled.p`
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 `;
 
 const Phone = styled.p`
@@ -79,14 +80,15 @@ const Phone = styled.p`
 `;
 
 const MailImg = styled.img`
-  width: 25%;
+  max-width: 10%;
   margin-right: 20px;
+  
 `;
 
 const PhoneImg = styled.img`
-  width: 23%;
-  margin-right: 25px;
-  margin-top: 10px;
+  max-width: 10%;
+  margin-right: 20px;
+  
 `;
 
 const Right = styled.div`
@@ -210,7 +212,7 @@ export default function Contact() {
           <Mail>
             <MailImg
               src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/mail.svg?v=1662546414864"
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/kindpng_2535701.png?v=1662908392215"
               }
             />
             and29ferraro@gmail.com
@@ -218,7 +220,7 @@ export default function Contact() {
           <Phone>
             <PhoneImg
               src={
-                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/phone%20bg.svg?v=1662546558035"
+                "https://cdn.glitch.global/7812f7dc-b12e-4d13-ad62-9680c2811117/toppng.com-phone-white-transparent-icon-426x425.png?v=1662908395777"
               }
             />
             +33 6 87 80 22 06
