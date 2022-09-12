@@ -80,13 +80,13 @@ const Phone = styled.p`
 `;
 
 const MailImg = styled.img`
-  max-width: 10%;
+  max-width: 5%;
   margin-right: 20px;
   
 `;
 
 const PhoneImg = styled.img`
-  max-width: 10%;
+  max-width: 5%;
   margin-right: 20px;
   
 `;
